@@ -1,0 +1,299 @@
+// Import mixins from "core" module
+@import '../../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  HORIZONTAL LAYOUT STYLES:
+    DEFAULT LAYOUT, BOXED LAYOUT;
+    COMPACT AND UNFIXED MODIFIERS  */
+
+body.cat {
+    &__config {
+        &--horizontal {
+
+            // unfixed top bar and left menu
+            &.cat__config--unfixed {
+
+                // next styles affects on "top-bar" module
+                // set body top padding to 0 (remove space for fixed top bar)
+                padding-top: 0;
+                overflow-x: hidden;
+                // remove fixed position from top bar
+                .cat__top-bar {
+                    position: static;
+                }
+            }
+
+            // > 768px (breakpoint) horizontal styles
+            @media (min-width: $sm-min-width) {
+
+                &.cat__config--unfixed {
+                    .cat__menu-left {
+                        position: relative;
+                    }
+                }
+
+                // next styles affects on "styles-core" module
+                padding-top: rem(130);
+                padding-left: 0;
+                .cat__content {
+                    margin-left: 0;
+                }
+
+                // next styles affects on "top-bar" module
+                .cat__top-bar {
+                    top: rem(65);
+                    padding-left: rem(20);
+
+                    &__logo {
+                        display: none;
+                    }
+                }
+
+                // next styles affects on "menu-left" module
+                .cat__menu-left {
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: rem(65);
+                    transform: none;
+                    transition: none;
+                    z-index: 991;
+
+                    &__lock {
+                        display: none;
+                    }
+
+                    &__inner {
+                        top: 0;
+                        left: rem(250);
+                        right: 0;
+                        width: auto;
+                        z-index: 9;
+                    }
+
+                    &__divider {
+                        display: none;
+                    }
+
+                    &__logo {
+                        position: relative;
+                        z-index: 10;
+                    }
+
+                    &__list {
+                        &--root {
+                            margin: 0;
+
+                            > li {
+                                float: left;
+                                &.cat__menu-left__item {
+                                    &:before {
+                                        top: auto;
+                                        bottom: 0;
+                                        height: 2px;
+                                        width: 100%;
+                                    }
+
+                                    > a {
+                                        height: rem(65);
+                                        padding: rem(14) rem(17) rem(0);
+                                        border-left: 1px solid $black-lighten-more;
+
+                                        > .badge {
+                                            position: absolute;
+                                            top: rem(6);
+                                            right: rem(6);
+                                        }
+
+                                        &:after {
+                                            top: auto;
+                                            bottom: rem(6);
+                                            left: 50%;
+                                            margin-left: rem(-3);
+                                            transform: rotate(-90deg);
+                                        }
+
+                                        > .cat__menu-left__icon {
+                                            position: static;
+                                            width: 100%;
+                                            display: block;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        > a {
+                                            background: $black;
+                                            color: $white;
+
+                                            > .cat__menu-left__icon {
+                                                color: $white;
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                                &.cat__menu-left__submenu {
+                                    position: relative;
+
+                                    &:hover {
+                                        > .cat__menu-left__list {
+                                            position: absolute;
+                                            top: 100%;
+                                            left: 0;
+                                            display: block;
+                                            width: rem(250);
+
+                                        }
+                                    }
+
+                                    .cat__menu-left__submenu {
+                                        position: relative;
+
+                                        &.cat__menu-left__item {
+                                            > a {
+                                                &:after {
+                                                    transform: rotate(-180deg);
+                                                }
+                                            }
+                                        }
+                                        &:hover {
+                                            > .cat__menu-left__list {
+                                                position: absolute;
+                                                top: rem(0);
+                                                left: 100%;
+                                                display: block;
+                                                width: rem(250);
+                                            }
+                                        }
+                                    }
+
+                                    &--horizontal-left {
+                                        .cat__menu-left__submenu {
+                                            &.cat__menu-left__item {
+                                                > a {
+                                                    &:after {
+                                                        transform: rotate(0deg);
+                                                    }
+                                                }
+                                            }
+                                            &:hover {
+                                                > .cat__menu-left__list {
+                                                    left: auto;
+                                                    right: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // horizontal boxed layout
+                &.cat__config--boxed {
+
+                    // next styles affects on "menu-left" module
+                    // custom styles of menu left module
+                    .cat__menu-left {
+                        left: 0;
+                        right: 0;
+                        max-width: $xl-max-width;
+                        margin: 0 auto;
+                    }
+
+                    // next styles affects on "top-bar" module
+                    // custom styles of top bar module
+                    .cat__top-bar {
+                        width: auto !important;
+                        max-width: $xl-max-width;
+                        margin: 0px auto !important;
+                        right: 0;
+                        left: rem(0);
+                        padding-left: rem(20);
+
+                        @media (min-width: $xl-min-width) {
+                            // hide logo on body width > $xl-min-width
+                            &__logo {
+                                display: none;
+                                padding-left: 0;
+                            }
+                        }
+                    }
+
+                    // next styles affects on "styles-core" module
+                    // set body padding for remove space for left menu
+                    padding-left: rem(0);
+
+                    .cat__content {
+                        width: auto !important;
+                        max-width: $xl-max-width;
+                        margin: 0px auto !important;
+
+                        // add background
+                        @media (min-width: $sm-min-width) {
+                            background: $white;
+                        }
+                    }
+                }
+
+                // horizontal compact layout
+                &.cat__config--compact {
+
+                    .cat__menu-left {
+                        &__list {
+                            &--root {
+                                > li {
+                                    &.cat__menu-left__item {
+                                        margin-left: rem(10);
+                                        margin-top: rem(18);
+
+                                        &:before {
+                                            bottom: auto;
+                                            top: 0;
+                                            height: 1px;
+                                        }
+
+                                        > a {
+                                            height: rem(28);
+                                            min-height: rem(20);
+                                            padding: rem(4) rem(7);
+                                            border: none;
+                                            position: relative;
+
+                                            > .badge {
+                                                position: absolute;
+                                                top: rem(-6);
+                                                right: rem(-4);
+                                            }
+
+                                            &:after {
+                                                top: 50%;
+                                                margin-top: rem(-4);
+                                                bottom: auto;
+                                                left: auto;
+                                                right: rem(8);
+                                                transform: rotate(-90deg);
+                                            }
+
+                                            > .cat__menu-left__icon {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+
+                                    &.cat__menu-left__submenu {
+                                        > a {
+                                            padding: rem(4) rem(20) rem(4) rem(7);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

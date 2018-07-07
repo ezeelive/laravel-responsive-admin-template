@@ -1,0 +1,10 @@
+/* CAROUSEL */
+.carousel-indicators li {
+    background: #eef0f4;
+    opacity: .5;
+}
+
+.carousel-indicators li.active {
+    opacity: 1;
+    background: #eef0f4;
+}

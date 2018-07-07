@@ -1,0 +1,97 @@
+/* BREADCRUMB */
+.breadcrumb {
+    background: #f2f4f8;
+}
+
+.breadcrumb--custom {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
+    background: none;
+}
+
+.breadcrumb--custom li {
+    padding: 0;
+    display: inline-block;
+}
+
+.breadcrumb--custom li:before {
+    display: none !important;
+}
+
+.breadcrumb--custom li > a, .breadcrumb--custom li > span {
+    display: inline-block;
+    padding: 9px 30px;
+    position: relative;
+    background: #eef0f4;
+    margin: 0 0.57rem 0.42rem;
+    font-size: 14px;
+}
+
+.breadcrumb--custom li > a:before, .breadcrumb--custom li > span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 39px 10px 0 0;
+    border-color: transparent #eef0f4 transparent transparent;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.breadcrumb--custom li > a:after, .breadcrumb--custom li > span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 39px 10px;
+    border-color: transparent transparent transparent #eef0f4;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.breadcrumb--custom li > a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.breadcrumb--custom li > a:hover {
+    background: #0088ff;
+    color: #ffffff;
+}
+
+.breadcrumb--custom li > a:hover:before {
+    border-color: transparent #0088ff transparent transparent;
+}
+
+.breadcrumb--custom li > a:hover:after {
+    border-color: transparent transparent transparent #0088ff;
+}
+
+.breadcrumb--custom li:first-child > a, .breadcrumb--custom li:first-child > span {
+    margin-left: 0;
+}
+
+.breadcrumb--custom li:first-child > a:before, .breadcrumb--custom li:first-child > span:before {
+    display: none;
+}
+
+.breadcrumb--custom li:last-child > a:after, .breadcrumb--custom li:last-child > span:after {
+    display: none;
+}
+
+.breadcrumb--custom li:after {
+    padding: 0;
+    content: "";
+}

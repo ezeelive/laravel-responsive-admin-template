@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dt-example table-type="html-wide" table-class="display responsive nowrap" order="5">
+
+<css lib="datatables responsive buttons" />
+<js lib="jquery datatables responsive buttons buttons-colvis">
+<![CDATA[
+
+$(document).ready(function() {
+	$('#example').DataTable( {
+		dom: 'Bfrtip',
+		buttons: [
+			'colvis'
+		]
+	} );
+} );
+
+]]>
+</js>
+
+<title lib="Responsive">With Buttons - Column visibility</title>
+
+<info><![CDATA[
+
+[Buttons](https://datatables.net/extensions/buttons) is an extension for DataTables that provides a framework for control buttons, and also a number of default button sets. This example shows the use of Responsive with the `b-button colvis` button type, demonstrating how Responsive works with column visibility in DataTables.
+
+]]></info>
+
+</dt-example>
+

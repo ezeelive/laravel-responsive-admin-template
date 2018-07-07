@@ -1,0 +1,86 @@
+<!-- START: components/slider -->
+<section class="card">
+    <div class="card-header">
+        <span class="cat__core__title">
+            <strong>Slider</strong>
+            <a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank" class="btn btn-sm btn-primary ml-2">Official Documentation <i class="icmn-link ml-1"><!-- --></i></a>
+        </span>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Basic w/ Grid</strong></h5>
+                <p class="text-muted">Element: read <a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">official documentation<small><i class="icmn-link ml-1"><!-- --></i></small></a></p>
+                <div class="mb-5">
+                    <input type="text" id="slider-1" class="form-control" name="example_name" value="" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Basic w/o Grid</strong></h5>
+                <p class="text-muted">Element: read <a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">official documentation<small><i class="icmn-link ml-1"><!-- --></i></small></a></p>
+                <div class="mb-5">
+                    <input type="text" id="slider-2" class="form-control" name="example_name" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Range w/ Min-Max</strong></h5>
+                <p class="text-muted">Element: read <a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">official documentation<small><i class="icmn-link ml-1"><!-- --></i></small></a></p>
+                <div class="mb-5">
+                    <input type="text" id="slider-3" class="form-control" name="example_name" value="" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Basic Range</strong></h5>
+                <p class="text-muted">Element: read <a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">official documentation<small><i class="icmn-link ml-1"><!-- --></i></small></a></p>
+                <div class="mb-5">
+                    <input type="text" id="slider-4" class="form-control" name="example_name" value="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END: components/slider -->
+
+<!-- START: page scripts -->
+<script>
+    $(function(){
+
+        $("#slider-1").ionRangeSlider({
+            min: 0,
+            max: 100,
+            from: 50,
+            step: 10,
+            grid: true,
+            grid_num: 10
+        });
+
+        $("#slider-2").ionRangeSlider();
+
+
+        $("#slider-3").ionRangeSlider({
+            type: "double",
+            min: 0,
+            max: 100,
+            from: 20,
+            from_min: 10,
+            from_max: 30,
+            from_shadow: true,
+            to: 80,
+            to_min: 70,
+            to_max: 90,
+            to_shadow: true,
+            grid: true,
+            grid_num: 10
+        });
+
+        $("#slider-4").ionRangeSlider({
+            from: 30,
+            to: 60,
+            type: 'double'
+        });
+
+    });
+</script>
+<!-- END: page scripts -->

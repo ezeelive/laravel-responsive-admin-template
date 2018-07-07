@@ -1,0 +1,97 @@
+// import mixins from "core" module
+@import 'mixins';
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  WIDGETS STYLES FOR "CORE" MODULE */
+
+
+.cat__core__widget {
+    border: 0px solid $white;
+    background: $white;
+    position: relative;
+    border-radius: .25rem;
+    margin-bottom: 1.35rem;
+
+    &--border {
+        border: 1px solid $gray-border;
+    }
+
+    &__1 {
+        &__plus {
+            position: absolute;
+            top: rem(20);
+            right: rem(20);
+            width: rem(21);
+            height: rem(21);
+            border: 1px solid $gray;
+            border-radius: 500px;
+            cursor: pointer;
+            opacity: .7;
+            &:after {
+                content: "";
+                position: absolute;
+                top: rem(3);
+                left: rem(9);
+                height: rem(13);
+                width: 1px;
+                background: $gray;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                width: rem(13);
+                height: 1px;
+                left: rem(3);
+                top: rem(9);
+                background: $gray;
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__2 {
+        &__head {
+            height: rem(250);
+            background: $gray-lighten-more;
+            background-size: cover;
+            background-position: top center;
+            border-radius: .25rem;
+            line-height: 1.1;
+            padding: rem(25) rem(30);
+        }
+        &__left {
+            float: left;
+            padding-left: rem(20);
+            margin-top: rem(-50);
+        }
+        &__right {
+            margin-left: rem(140);
+            padding-top: rem(45);
+            padding-right: rem(20);
+            padding-bottom: 1px;
+        }
+    }
+
+    &__3 {
+        &__body {
+            display: block;
+            height: rem(140);
+            position: relative;
+            width: 100%;
+            padding: rem(25) rem(30);
+            overflow: hidden;
+        }
+        &__icon {
+            display: inline-block;
+            font-size: rem(80);
+            position: absolute;
+            z-index: 1;
+            bottom: rem(-40);
+            right: rem(-25);
+            opacity: .4;
+        }
+    }
+}

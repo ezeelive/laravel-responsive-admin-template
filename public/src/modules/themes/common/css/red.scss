@@ -1,0 +1,147 @@
+// Import mixins from "core" module
+@import '../../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* THEMES: RED */
+
+$color1: #fff;
+$color2: #74708d;
+$color3: #e4e9f0;
+$color4: #e4e9f0;
+$color5: #d24667;
+
+body.cat {
+    &__theme {
+        &--red {
+
+            // "menu-left" module styles
+            .cat__menu-left__logo {
+                background: $color5;
+            }
+
+            .cat__menu-left__lock {
+                background: $color5;
+            }
+
+            .cat__menu-left__pin-button {
+                opacity: .7;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .cat__menu-left__pin-button div {
+                background: #fff;
+            }
+
+            .cat__menu-left__pin-button div:before, .cat__menu-left__pin-button div:after {
+                background: #fff;
+            }
+
+            .cat__menu-left {
+                background: $color1;
+                border-right: 1px solid $color4;
+            }
+
+            .cat__menu-left__item > a {
+                color: $color2;
+            }
+
+            .cat__menu-left__item--active > a,
+            .cat__menu-left__item:hover > a,
+            .cat__menu-left__item:active > a,
+            .cat__menu-left__item:focus > a {
+                background: $color5;
+                color: $white;
+
+                &:before {
+                    display: none !important;
+                }
+            }
+
+            .cat__menu-left__submenu--toggled.cat__menu-left__item {
+                background: $color5;
+                color: $color1;
+
+                > a {
+                    color: $white;
+                    .cat__menu-left__icon {
+                        color: $white;
+                    }
+                }
+            }
+
+            .cat__menu-left__submenu > .cat__menu-left__list {
+                background: lighten($color3, 5%);
+            }
+
+            .cat__menu-left__icon {
+                color: lighten($color2, 30%);
+            }
+
+            .cat__menu-left__item--active > a > .cat__menu-left__icon,
+            .cat__menu-left__item:hover > a > .cat__menu-left__icon,
+            .cat__menu-left__item:active > a > .cat__menu-left__icon,
+            .cat__menu-left__item:focus > a > .cat__menu-left__icon {
+                color: $color1;
+            }
+
+            .cat__menu-left__submenu.cat__menu-left__item > a:after {
+                border-color: transparent lighten($color2, 30%) transparent transparent;
+            }
+
+            .cat__menu-left__divider {
+                background: $color3;
+            }
+
+            .cat__menu-left .jspScrollable .jspDrag:after {
+                background: lighten($color2, 40%) !important;
+            }
+
+            // compact & vertical layout
+            &.cat__config--vertical.cat__config--compact {
+                @media (min-width: 768px) {
+                    .cat__menu-left__item > a:before {
+                        background: $color3;
+                    }
+                }
+            }
+
+            // horizontal layout
+            &.cat__config--horizontal {
+                .cat__menu-left {
+                    border-right: none;
+                    border-bottom: 1px solid $color4;
+                }
+
+                @media (min-width: 768px) {
+                    .cat__menu-left__list--root > li.cat__menu-left__item {
+                        > a {
+                            border-left-color: $color3;
+                        }
+
+                        &:hover {
+                            > a {
+                                border-left-color: $color5;
+                                .cat__menu-left__icon {
+                                    color: $color1 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .cat__menu-left__list--root > li.cat__menu-left__item:hover > a {
+                        background: $color5;
+                        color: $white;
+                    }
+
+                    .cat__menu-left__list--root > li.cat__menu-left__item:hover > a > .cat__menu-left__icon {
+                        color: lighten($color2, 10%);
+                    }
+                }
+            }
+
+        }
+    }
+}

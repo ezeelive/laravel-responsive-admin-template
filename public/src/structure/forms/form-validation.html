@@ -1,0 +1,171 @@
+<!-- START: forms/form-validation -->
+<section class="card">
+    <div class="card-header">
+        <span class="cat__core__title">
+            <strong>Form Validation</strong>
+            <a href="http://www.runningcoder.org/jqueryvalidation/" target="_blank" class="btn btn-sm btn-primary ml-2">Official Documentation <i class="icmn-link ml-1"><!-- --></i></a>
+        </span>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="mb-5">
+                    <h5 class="text-black"><strong>Tooltip Error</strong></h5>
+                    <p class="text-muted">Element: read <a href="http://www.runningcoder.org/jqueryvalidation/" target="_blank">official documentation<small><i class="icmn-link ml-1"><!-- --></i></small></a></p>
+                    <!-- Popup Form Validation -->
+                    <form id="form-validation" name="form-validation" method="POST">
+                        <div class="form-group">
+                            <label class="form-label" for="validation-username">Username</label>
+                            <input id="validation-username"
+                                   class="form-control"
+                                   name="validation[username]"
+                                   type="text" data-validation="[L>=6, L<=18, MIXED]"
+                                   data-validation-message="$ must be between 6 and 18 characters. No special characters allowed."
+                                   data-validation-regex="/^((?!admin).)*$/i"
+                                   data-validation-regex-message="The word &quot;Admin&quot; is not allowed in the $">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="validation-password">Password</label>
+                            <input id="validation-password"
+                                   class="form-control"
+                                   name="validation[password]"
+                                   type="password" data-validation="[L>=6]"
+                                   data-validation-message="$ must be at least 6 characters">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="validation-password-confirm">Confirm Password</label>
+                            <input id="validation-password-confirm"
+                                   class="form-control"
+                                   name="validation[password-confirm]"
+                                   type="password" data-validation="[V==validation[password]]"
+                                   data-validation-message="$ does not match the password">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="validation-email">Email</label>
+                            <input id="validation-email"
+                                   class="form-control"
+                                   name="validation[email]"
+                                   type="text"
+                                   data-validation="[EMAIL]">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="validation-email-confirm">Confirm Email</label>
+                            <input id="validation-email-confirm"
+                                   class="form-control"
+                                   name="validation[email-confirm]"
+                                   type="text"
+                                   data-validation="[V==validation[email]]"
+                                   data-validation-message="$ does not match the email">
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary width-150">Validate</button>
+                            <button type="button" class="btn btn-default remove-error">Clear</button>
+                        </div>
+                    </form>
+                    <!-- End Popup Form Validation -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="mb-5">
+                    <h5 class="text-black"><strong>Error Under Element</strong></h5>
+                    <p class="text-muted">Element: read <a href="http://www.runningcoder.org/jqueryvalidation/" target="_blank">official documentation<small><i class="icmn-link ml-1"><!-- --></i></small></a></p>
+                    <!-- Under Element Form Validation -->
+                    <form id="form-validation-simple" name="form-validation-simple" method="POST">
+                        <div class="form-group">
+                            <label class="form-label">Username</label>
+                            <input name="validation-simple[username]"
+                                   type="text"
+                                   class="form-control"
+                                   data-validation="[NOTEMPTY]">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input name="validation-simple[password]"
+                                   type="password"
+                                   class="form-control"
+                                   data-validation="[NOTEMPTY]">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input name="validation-simple[email]"
+                                   type="text"
+                                   class="form-control"
+                                   data-validation="[EMAIL]">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Select</label>
+                            <select name="validation-simple[type]"
+                                   class="form-control"
+                                   data-validation="[NOTEMPTY]">
+                                <option value="">Select type</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Select2</label>
+                            <select name="validation-simple[color]"
+                                    class="form-control select2"
+                                    data-validation="[NOTEMPTY]">
+                                <option value="">Select type</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary width-150">Validate</button>
+                            <button type="button" class="btn btn-default remove-error">Clear</button>
+                        </div>
+                    </form>
+                    <!-- End Under Element Form Validation -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END: forms/form-validation -->
+
+<!-- START: page scripts -->
+<script>
+    $(function(){
+
+        $('#form-validation').validate({
+            submit: {
+                settings: {
+                    inputContainer: '.form-group',
+                    errorListClass: 'form-control-error',
+                    errorClass: 'has-danger'
+                }
+            }
+        });
+
+        $('#form-validation .remove-error').on('click', function(){
+            $('#form-validation').removeError();
+        });
+
+        $('#form-validation-simple').validate({
+            submit: {
+                settings: {
+                    inputContainer: '.form-group',
+                    errorListClass: 'form-control-error-list',
+                    errorClass: 'has-danger'
+                }
+            }
+        });
+
+        $('#form-validation-simple .remove-error').on('click', function(){
+            $('#form-validation-simple').removeError();
+        });
+
+
+        $('.select2').select2();
+        $('.select2-tags').select2({
+            tags: true,
+            tokenSeparators: [',', ' ']
+        });
+
+    });
+</script>
+<!-- END: page scripts -->

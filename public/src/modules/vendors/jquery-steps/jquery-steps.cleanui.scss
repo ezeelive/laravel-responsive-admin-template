@@ -1,0 +1,148 @@
+// Import mixins from "core" module
+@import '../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  JQUERY STEPS */
+
+.cat__wizard {
+    &__steps__icon, .number {
+        border: 3px solid $primary;
+        border-radius: 100%;
+        width: rem(45);
+        height: rem(45);
+        display: inline-block;
+        text-align: center;
+        line-height: rem(37);
+        color: $primary;
+        font-size: rem(24);
+        background: $white;
+    }
+    &__steps__title {
+        display: block;
+    }
+    > .content {
+        min-height: rem(150);
+        margin: 0 0 rem(15);
+        background: transparent;
+        > .body {
+            background: transparent;
+            padding: rem(25) 0;
+        }
+    }
+    .steps {
+        ul {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            li {
+                flex-grow: 200;
+                margin-bottom: rem(10);
+                float: none;
+                width: auto;
+                position: relative;
+                a {
+                    background: transparent !important;
+                    margin: 0 !important;
+                    text-align: center;
+                    color: $black !important;
+                    line-height: rem(30);
+                    position: relative;
+                    z-index: 2;
+                    .number {
+                        display: none;
+                    }
+                }
+                &:before, &:after {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 50%;
+                    top: rem(36);
+                    right: 0;
+                    height: rem(3);
+                    background: $primary;
+                    z-index: 1;
+                }
+                &:after {
+                    right: auto;
+                    left: 0;
+                }
+                &:first-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+                &:last-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+                &.disabled {
+                    &:before, &:after {
+                        background: $gray-darken;
+                    }
+                    .cat__wizard__steps__icon, .number {
+                        border-color: $gray-darken;
+                        background: $gray-darken;
+                        color: $white;
+                    }
+                    a {
+                        color: $black-lighten-more !important;
+                    }
+                }
+            }
+            @media (max-width: $md-max-width) {
+                flex-direction: column;
+            }
+        }
+    }
+    .actions {
+        text-align: center;
+        li {
+            margin-left: 0 !important;
+            a {
+                background-color: $default;
+                border-color: $default;
+                min-width: rem(120);
+                text-align: center;
+                &:hover, &:active {
+                    background-color: lighten($default, 6%);
+                    border-color: lighten($default, 6%);
+                }
+            }
+            &.disabled {
+                a {
+                    background-color: $default !important;
+                    border-color: $default !important;
+                    color: $white !important;
+                    cursor: not-allowed;
+                    opacity: .65;
+                }
+            }
+        }
+    }
+    &__numbers {
+        .number {
+            padding-left: 3px;
+        }
+        .steps {
+            ul {
+                li {
+                    a {
+                        .number {
+                            display: inline-block !important;
+                            line-height: rem(42);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content > .body input {
+        border-color: $gray-border;
+        &:focus {
+            border-color: $primary;
+        }
+    }
+}

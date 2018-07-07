@@ -1,0 +1,78 @@
+// Import mixins from "core" module
+@import '../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  MENU RIGHT */
+
+.cat {
+    &__menu-right {
+        position: fixed;
+        z-index: 995;
+        top: 0;
+        right: 0;
+        width: rem(250);
+        height: 100%;
+        background: $gray-lighten;
+        transform: translate3d(rem(250),0,0);
+        transition: transform .2s ease-in-out;
+        overflow-y: auto;
+
+        &__inner {
+            padding: rem(20);
+        }
+
+        // header styles
+        &__header {
+            border-bottom: 1px solid $gray-border;
+            padding: rem(5) 0;
+            font-weight: bold;
+            color: $text;
+            min-height: rem(45);
+            span {
+                cursor: pointer;
+                position: relative;
+                top: rem(3);
+                color: $gray;
+                font-size: rem(16);
+                &:hover {
+                    color: $gray-darken;
+                }
+            }
+        }
+
+        //content block
+        &__content {
+            padding: rem(20) 0;
+        }
+
+        // description block
+        &__descr {
+            font-size: rem(12);
+            color: $text;
+            margin-bottom: rem(20);
+            line-height: 1.8;
+        }
+
+        // labels
+        &__label {
+            color: $text;
+            font-size: rem(12);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: rem(10);
+        }
+
+        // setting item
+        &__setting {
+            margin-bottom: rem(15);
+        }
+
+        // show when class visible
+        @at-root {
+            body.cat__menu-right--visible & {
+                transform: translate3d(0,0,0);
+                box-shadow: 0 0 200px -30px rgba($black-lighten-more,.4);
+            }
+        }
+    }
+}

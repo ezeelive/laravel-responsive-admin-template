@@ -1,0 +1,18 @@
+// Import mixins from "core" module
+@import '../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  DROPIFY */
+
+.dropify-wrapper {
+    border: 1px solid $gray-border;
+    border-radius: 5px;
+
+    &:hover {
+        background-image: linear-gradient(-45deg, $gray-lighten-more 25%, transparent 25%, transparent 50%, $gray-lighten-more 50%, $gray-lighten-more 75%, transparent 75%, transparent);
+    }
+
+    &.disabled {
+        opacity: .5;
+    }
+}

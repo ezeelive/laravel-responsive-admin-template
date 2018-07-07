@@ -1,0 +1,94 @@
+/*  WIDGETS STYLES FOR "CORE" MODULE */
+.cat__core__widget {
+    border: 0px solid #ffffff;
+    background: #ffffff;
+    position: relative;
+    -webkit-border-radius: .25rem;
+            border-radius: .25rem;
+    margin-bottom: 1.35rem;
+}
+
+.cat__core__widget--border {
+    border: 1px solid #e4e9f0;
+}
+
+.cat__core__widget__1__plus {
+    position: absolute;
+    top: 1.42rem;
+    right: 1.42rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #d2d9e5;
+    -webkit-border-radius: 500px;
+            border-radius: 500px;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.cat__core__widget__1__plus:after {
+    content: "";
+    position: absolute;
+    top: 0.21rem;
+    left: 0.64rem;
+    height: 0.92rem;
+    width: 1px;
+    background: #d2d9e5;
+}
+
+.cat__core__widget__1__plus:before {
+    content: "";
+    position: absolute;
+    width: 0.92rem;
+    height: 1px;
+    left: 0.21rem;
+    top: 0.64rem;
+    background: #d2d9e5;
+}
+
+.cat__core__widget__1__plus:hover {
+    opacity: 1;
+}
+
+.cat__core__widget__2__head {
+    height: 17.85rem;
+    background: #f2f4f8;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: top center;
+    -webkit-border-radius: .25rem;
+            border-radius: .25rem;
+    line-height: 1.1;
+    padding: 1.78rem 2.14rem;
+}
+
+.cat__core__widget__2__left {
+    float: left;
+    padding-left: 1.42rem;
+    margin-top: -3.58rem;
+}
+
+.cat__core__widget__2__right {
+    margin-left: 10rem;
+    padding-top: 3.21rem;
+    padding-right: 1.42rem;
+    padding-bottom: 1px;
+}
+
+.cat__core__widget__3__body {
+    display: block;
+    height: 10rem;
+    position: relative;
+    width: 100%;
+    padding: 1.78rem 2.14rem;
+    overflow: hidden;
+}
+
+.cat__core__widget__3__icon {
+    display: inline-block;
+    font-size: 5.71rem;
+    position: absolute;
+    z-index: 1;
+    bottom: -2.86rem;
+    right: -1.79rem;
+    opacity: .4;
+}

@@ -1,0 +1,181 @@
+// Import mixins from "core" module
+@import '../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  NESTABLE */
+
+.dd {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    button {
+        outline: none;
+    }
+}
+
+.dd-list {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dd-list .dd-list {
+    padding-left: rem(30);
+}
+.dd-collapsed .dd-list {
+    display: none;
+}
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: rem(30);
+    line-height: rem(30);
+}
+
+.dd-handle {
+    display: block;
+    height: rem(40);
+    margin: rem(5) 0;
+    padding: rem(5) rem(10);
+    text-decoration: none;
+    border: 1px solid $gray-border;
+    background: #fff;
+    border-radius: 3px;
+    cursor: move;
+    &:hover {
+        color: #fff;
+        background: $primary;
+        border-color: $primary;
+    }
+}
+.dd-item {
+    & > button {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        float: left;
+        width: rem(30);
+        height: rem(30);
+        margin: rem(5) 0;
+        padding: 0;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        border: 0;
+        background: transparent;
+        line-height: rem(33);
+        text-align: center;
+        font-family: FontAwesome;
+        font-size: rem(11);
+        color: $text;
+        &:before {
+            content: "\f067";
+            display: block;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            text-indent: 0;
+        }
+        &[data-action="collapse"]:before {
+            content: "\f068";
+        }
+    }
+}
+.dd-placeholder, .dd-empty {
+    margin: rem(5) 0;
+    padding: 0;
+    min-height: rem(30);
+    background: $gray-lighten-more;
+    border: 1px dashed $gray-border;
+    border-radius: 3px;
+}
+.dd-empty {
+    border: 1px dashed $gray-border;
+    min-height: rem(100);
+    background-color: $white;
+}
+.dd-dragel {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: .8;
+    list-style: none;
+    li {
+        list-style: none;
+    }
+    > .dd-item .dd-handle {
+        margin-top: 0;
+    }
+    .dd-item > button {
+        display: none;
+    }
+    .dd-handle {
+        line-height: rem(20);
+        min-height: rem(30);
+        padding: rem(5) rem(10);
+    }
+}
+.dd3-content {
+    display: block;
+    height: rem(40);
+    margin: rem(5) 0;
+    padding: rem(5) rem(10) rem(5) rem(40);
+    text-decoration: none;
+    border: 1px solid $gray-border;
+    background: $white;
+    border-radius: 3px;
+}
+
+.dd-dragel > .dd3-item > .dd3-content {
+    margin: 0;
+}
+
+.dd3-item > button {
+    margin-left: 30px;
+    &.hover {
+        color: $black-lighten;
+    }
+}
+.dd3-handle {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    cursor: move;
+    width: rem(30);
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid $gray-border;
+    background: $gray-lighten-more;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: $text;
+    &:before {
+        font-family: FontAwesome;
+        content: "\f0c9";
+        display: block;
+        position: absolute;
+        left: 0; top: -1px;
+        width: 100%;
+        text-align: center;
+        text-indent: 0;
+        font-size: rem(14);
+        line-height: rem(40);
+    }
+    &:hover {
+        background: $primary;
+        & + .dd3-content {
+            border-color: $primary;
+        }
+    }
+}

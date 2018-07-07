@@ -1,0 +1,58 @@
+/* ALERTS */
+.alert {
+    border: none;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.alert .close {
+    color: #ffffff;
+    opacity: .5;
+    outline: none !important;
+}
+
+.alert .close:hover {
+    opacity: 1;
+}
+
+.alert a, .alert .alert-link {
+    font-weight: normal;
+    color: #ffffff;
+    opacity: .7;
+    -webkit-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.alert a:hover, .alert .alert-link:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.alert.alert-default {
+    background: #acb7bf;
+}
+
+.alert.alert-primary {
+    background: #0190fe;
+}
+
+.alert.alert-secondary {
+    background: #6a7a84;
+}
+
+.alert.alert-success {
+    background: #46be8a;
+}
+
+.alert.alert-info {
+    background: #0887c9;
+}
+
+.alert.alert-warning {
+    background: #f39834;
+}
+
+.alert.alert-danger {
+    background: #fb434a;
+}

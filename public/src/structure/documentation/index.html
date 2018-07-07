@@ -1,0 +1,2259 @@
+<!-- START: documentation/index -->
+<section class="card">
+  <div class="card-header">
+        <span class="cat__core__title">
+            <strong>Clean UI Admin Template Documentation</strong>
+            <sup class="text-muted">
+                <small>Version <%= productVersion %></small>
+            </sup>
+        </span>
+  </div>
+  <div class="card-body">
+    <div class="nav-tabs-horizontal">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="table-of-contents">
+            <h4 class="mb-3 text-black" style="height: 2.125rem; padding-top: 0.15rem;">
+              <strong>Table of Contents</strong>
+            </h4>
+            <hr/>
+            <div class="px-3 mb-5">
+              <ol class="list-unstyled scroll-to-chapter">
+                <li class="mb-2"><a href="#chapter1" class="cat__core__link--blue cat__core__link--underlined">1.
+                  Overview</a></li>
+                <li class="mb-2"><a href="#chapter2" class="cat__core__link--blue cat__core__link--underlined">2. File
+                  Structure</a></li>
+                <li class="mb-2"><a href="#chapter3" class="cat__core__link--blue cat__core__link--underlined">3. HTML
+                  version</a></li>
+                <li class="mb-2"><a href="#chapter4" class="cat__core__link--blue cat__core__link--underlined">4.
+                  Angular version</a></li>
+                <li class="mb-2"><a href="#chapter5" class="cat__core__link--blue cat__core__link--underlined">5.
+                  Template Structure</a></li>
+                <li class="mb-2"><a href="#chapter6" class="cat__core__link--blue cat__core__link--underlined">6.
+                  Template Configuration</a></li>
+                <li class="mb-2"><a href="#chapter7" class="cat__core__link--blue cat__core__link--underlined">7.
+                  Font</a></li>
+                <li class="mb-2"><a href="#chapter8" class="cat__core__link--blue cat__core__link--underlined">8.
+                  Modules</a></li>
+                <li class="mb-2">
+                  <ol class="list-unstyled ml-3">
+                    <li class="mb-2"><a href="#chapter8-1" class="cat__core__link--blue cat__core__link--underlined">8.1.
+                      Core Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-2" class="cat__core__link--blue cat__core__link--underlined">8.2.
+                      Layouts Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-3" class="cat__core__link--blue cat__core__link--underlined">8.3.
+                      Top-bar Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-4" class="cat__core__link--blue cat__core__link--underlined">8.4.
+                      Menu-left Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-5" class="cat__core__link--blue cat__core__link--underlined">8.5.
+                      Menu-right Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-6" class="cat__core__link--blue cat__core__link--underlined">8.6.
+                      Footer Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-7" class="cat__core__link--blue cat__core__link--underlined">8.7.
+                      Themes Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-8" class="cat__core__link--blue cat__core__link--underlined">8.8.
+                      Vendors Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-9" class="cat__core__link--blue cat__core__link--underlined">8.9.
+                      Pages Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-10" class="cat__core__link--blue cat__core__link--underlined">8.10.
+                      Apps Module</a></li>
+                    <li class="mb-2"><a href="#chapter8-11" class="cat__core__link--blue cat__core__link--underlined">8.11.
+                      Ecommerce Module</a></li>
+                  </ol>
+                </li>
+                <li class="mb-2"><a href="#chapter9" class="cat__core__link--blue cat__core__link--underlined">9.
+                  Plugins</a></li>
+                <li class="mb-2"><a href="#chapter10" class="cat__core__link--blue cat__core__link--underlined">10.
+                  Change Log </a></li>
+                <li class="mb-2"><a href="#chapter11" class="cat__core__link--blue cat__core__link--underlined">11.
+                  Upgrade</a></li>
+                <li class="mb-2"><a href="#chapter12" class="cat__core__link--blue cat__core__link--underlined">12. End
+                  of Documentation</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <h4 class="mb-3 text-black" id="chapter1">
+            <strong>1. Overview</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+          <div class="alert alert-warning" role="alert">
+            <p class="mb-0">
+              Rating is a very important both for us (it motivates to develop new modules), and for future customers. So
+              we request you to rate our Templates with 5 Stars on Themeforest.
+              <br/>You can do it in <a href="https://themeforest.net/downloads" target="_blank">Themeforest Download</a>
+              section. Thank you!
+            </p>
+          </div>
+          <p>Clean UI is the first framework in the world, which uses the concept of modularity.
+            The use of such approach allows you to drastically reduce the time and cost of
+            development. Build the interface from the ready blocks and modules quickly and easily,
+            like Lego! And all this is available now for Angular (version 4 or higher).
+
+
+          <p>This is a completely modular framework, built on the latest technologies, such as BEM
+            methodology (Block Element Modifier). You can learn more about the methodology
+            <a href="https://ru.bem.info/methodology/" class="cat__core__link--blue cat__core__link--underlined"
+               target="_blank">here</a>.
+            Following the simple and understandable rules of this methodology allows the easy support
+            of code even after long-term development. Adding new functionality and modifying the old
+            one has never been so easy before. The presence of a variety of useful development
+            methodologies make this process easier and more enjoyable; for example, such feature as
+            rem measurement units make mobile versions of applications, built on the basis of Clean UI,
+            look great on any type of devices. Open our template on your mobile phone and be sure to
+            verify it yourself!
+          </p>
+
+          <p>Clean UI - a modern professional admin template, based on Bootstrap 4 framework. It's a
+            powerful and super flexible tool, which suits best for any kind of web
+            application: Web Applications; CRM; CMS; Admin Panels; Dashboards; etc. Clean UI is
+            fully responsive, which means that it looks perfect on mobiles and tablets.</p>
+
+          <p>Our template is fully based on SASS pre-processor, includes 50+ commented SASS files.
+            Each file corresponds to a single component, layout, page, plugin or extension – so
+            you can easily find necessary piece of code and edit it for your needs. The package
+            includes CSS files compiled from SASS.</p>
+
+          <hr/>
+
+          <p><strong>NOTE: A single license can be used only for one domain or client. Each use of
+            the theme requires a separate license. We hope you will follow the rules as it will
+            help us to continue supporting our themes and providing a free future updates. Also, don't forget read about
+            Extended License.</strong></p>
+
+          <a
+            href="https://themeforest.net/item/clean-ui-admin-template-modular-trendy-design-modules-market-bem-angular-2-visual-builder/19597589?s_rank=4&ref=mediatec_software"
+            target="_blank" class="btn btn-sm btn-primary">Purchase A New License</a>
+          <a href="http://themeforest.net/licenses/standard?s_rank=4&ref=mediatec_software" class="btn btn-sm"
+             target="_blank">License Info</a>
+
+          <br/>
+          <br/>
+
+          <p><strong>NOTE: A single purchase includes 6 months support subscription and after this period
+            expired in order to continue getting the theme support from us you will need to extend
+            it by purchasing a new support subscription. For more info please check Envato support
+            rules or support policy.</strong></p>
+
+          <a
+            href="https://themeforest.net/item/clean-ui-admin-template-modular-trendy-design-modules-market-bem-angular-2-visual-builder/19597589?s_rank=4&ref=mediatec_software"
+            target="_blank" class="btn btn-sm btn-primary">Extend Support</a>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h4 class="mb-3 text-black" id="chapter2">
+            <strong>2. File Structure</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+          <p>Almost every source file of the template contains the necessary minimum comments to
+            the code. Please be sure to read them to understand the work of this code.</p>
+
+          <br/>
+
+          <pre>+
++
+├─ cleanui-admin-template-angular/  .. angular version
+│  ├─ e2e/                          .. system angular files
+│  ├─ dist/                         .. build app files after "ng build --prod --aot" run
+│  ├─ node_modules/                 .. node.js modules installed after "npm install" run
+│  ├─ src/                          .. app source files
+│  │  ├─ app/                       .. app files (includes templates manually copied and adapted from clean ui)
+│  │  ├─ assets/                    .. assets folder (includes files manually copied and adapted from clean ui)
+│  │  ├─ environments/              .. system angular files
+│  │  ├─ index.html                 .. main app template
+│  │  ├─ main.ts                    .. main app script
+│  │  └─ *                          .. system angular files
+│  ├─ *                             .. system angular files
+│  └─ README.md                     .. git readme file
++
++
+├─ cleanui-admin-template/          .. html version
+│  ├─ dist/                         .. build app files by gulp after "gulp" run
+│  │  ├─ modules/                   .. cleanui modules files
+│  │  ├─ vendors/                   .. vendors files
+│  │  └─ versions/                  .. cleanui versions files (layout variations)
+│  ├─ node_modules/                 .. node.js modules installed after "npm install" run
+│  ├─ src/                          .. source files
+│  │  ├─ modules/                   .. cleanui modules files
+│  │  ├─ templates/                 .. cleanui template files (layout variations)
+│  │  │  ├─ structure/              .. template structure
+│  │  │  └─ versions/               .. cleanui versions templates (layout variations)
+│  │  └─ vendors/                   .. vendors files installed by bower after "bower install" run
+│  ├─ *                             .. system npm, gulp, and git files
+│  └─ README.md                     .. git readme file
++
++
+└─ documentation.html               .. link to template documentation
+</pre>
+
+          <br/>
+          <br/>
+          <br/>
+
+
+          <h4 class="mb-3 text-black" id="chapter3">
+            <strong>3. HTML Version</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+          <p class="text-muted">Note: For use <code>px</code>'s instead <code>rem</code>'s in CSS, change calculation
+            formula in rem
+            function (/src/modules/core/css/mixins.scss) and recompile SASS by
+            <code>gulp build:css</code> task.</p>
+          <p>Use the ready (pre-compiled) templates of different versions from the folder <code>/dist/versions/</code>
+          </p>
+          <p>or </p>
+          <p>Use Gulp for build source files:</p>
+          <ol>
+            <li>Install latest Node.js from here <a href="https://nodejs.org"
+                                                    class="cat__core__link--blue cat__core__link--underlined"
+                                                    target="_blank">https://nodejs.org</a>;
+            </li>
+            <li>Install Bower <code>npm install --global bower gulp</code>;</li>
+            <li>Install Node modules <code>npm install</code>;</li>
+            <li>Install project dependencies <code>bower install</code>;</li>
+            <li>Run gulp <code>gulp</code> (builds to /dist/);</li>
+            <li>If a browser did not open automatically, please open http://localhost:9000 in any browser.</li>
+          </ol>
+
+          <br/>
+
+          <p>Gulp tasks:</p>
+          <ol>
+            <li><code>gulp</code> default task, includes ['build', 'watch', 'serve'] tasks;</li>
+            <li><code>gulp build</code> includes ['build:version', 'build:js', 'build:css', 'build:img',
+              'build:vendors'];
+            </li>
+            <li><code>gulp serve</code> project serve;</li>
+            <li><code>gulp build:versions</code> build pages and structure (html);</li>
+            <li><code>gulp build:js</code> build js scripts;</li>
+            <li><code>gulp build:css</code> compilation and build sass files (css);</li>
+            <li><code>gulp build:img</code> build images;</li>
+            <li><code>gulp build:vendors</code> copy and merge vendros plugins to dist folder.</li>
+          </ol>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h4 class="mb-3 text-black" id="chapter4">
+            <strong>4. Angular Version</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+          <p>Angular (version 4 and higher) of Clean UI Admin Template. Application routing + Ng-Bootstrap directives.
+            Use of this version is optional.</p>
+          <p>Installation:</p>
+          <ol>
+            <li>Install latest Node.js from here <a href="https://nodejs.org"
+                                                    class="cat__core__link--blue cat__core__link--underlined"
+                                                    target="_blank">https://nodejs.org</a>;
+            </li>
+            <li>Install Angualr CLI <code>npm install -g angular/cli</code>;</li>
+            <li>Install Node modules <code>npm install</code>;</li>
+            <li>Install project dependencies <code>bower install</code>;</li>
+            <li>Run Angular <code>ng serve</code>;</li>
+            <li>Build Angular production files <code>ng build --prod --aot</code> (builds to /dist/);</li>
+            <li>Open in any browser http://localhost:4200</li>
+          </ol>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h4 class="mb-3 text-black" id="chapter5">
+            <strong>5. Template Structure</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+          <div class="row">
+            <div class="col-lg-7">
+              <p>The original display of template consists of the following blocks:</p>
+              <ol>
+                <li>Top-bar - block, based on the "Top-bar Module";</li>
+                <li>Left Sidebar - block, based on the "Menu-left Module";</li>
+                <li>Content - content block;</li>
+                <li>Right Sidebar - block, based on the "Menu-right Module";</li>
+                <li>Footer - block, based on the "Footer Module".</li>
+              </ol>
+            </div>
+            <div class="col-lg-5">
+              <table class="table"
+                     style="border-collapse: initial; border-spacing: 10px; text-align: left; vertical-align: top;">
+                <tr>
+                  <td rowspan="3" style="width: 20%; background: #e4e9f0">2.</td>
+                  <td style="background: #e4e9f0">1.</td>
+                  <td rowspan="3" style="width: 20%; background: #e4e9f0">4.</td>
+                </tr>
+                <tr>
+                  <td style="background: #e4e9f0">3. <br/><br/></td>
+                </tr>
+                <tr>
+                  <td style="background: #e4e9f0">5.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <br/>
+
+          <p>Code structure:</p>
+
+          <ul class="text-muted">
+            <li>Each class has the "cat__" prefix (abbreviation of Cleanui Admin Template);
+              this makes any class unique, which allows to easily add modifiers,
+              as well as get rid of unwanted styles inheritance;
+            </li>
+            <li>Please see the section "Template configuration" for the information on
+              the possible classes of body tag;
+            </li>
+            <li>The template can contain any set of modules and in any order.</li>
+          </ul>
+
+          <br/>
+
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>html</span><span
+            style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>head</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#696969; '>&lt;!-- meta, scripts, and styles includes here --></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>head</span><span
+              style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>body</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>""</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-right"</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- "menu-right module" template --></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left"</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- "menu-left module" template --></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__top-bar"</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- "top-bar module" template --></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__content"</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- current page content --></span>
+        <span style='color:#696969; '>&lt;!-- current page scripts --></span>
+
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__footer"</span><span
+              style='color:#a65700; '>></span>
+            <span style='color:#696969; '>&lt;!-- "footer module" template --></span>
+        <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>body</span><span
+              style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>html</span><span
+              style='color:#a65700; '>></span>
+</pre>
+
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h4 class="mb-3 text-black" id="chapter6">
+            <strong>6. Template Configuration</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+          <p>The template has a set of global settings, which are activated by adding certain classes to the
+            <code>body</code>tag:</p>
+
+          <ul class="text-muted">
+            <li>These settings may affect the modules connected to the template. Information on any
+              impact of a particular global setting on the module is located in the description
+              of this module;
+            </li>
+            <li>These settings can be used for any of the modules and modify them regardless of
+              the names of these settings.
+            </li>
+          </ul>
+
+          <br/>
+          <p>Settings:</p>
+
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Applies to</th>
+              <th>By default used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__config--vertical</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                The vertical layout type. Mandatory class, can be replaceed by <code>.cat__config--horizontal</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--horizontal</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                The horizontal layout type. Mandatory class, can be replaceed by <code>.cat__config--vertical</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--boxed</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Fixed width content block
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--compact</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Compact layout type
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--unfixed</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Layout type with unfixed blocks
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--superclean</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Clean styles layout type
+                <br/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--squared-corners</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Squared corners
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--shadow</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Drop shadows
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+
+          <p>Example of use (will configure the compact horizontal menu on top with the fixed width of
+            content-area):</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>body</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__config--horizontal cat__config--boxed cat__config--compact"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h4 class="mb-3 text-black" id="chapter7">
+            <strong>7. Font</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+          <p>This template uses font PT Sans, loaded from.
+            <a href="https://fonts.google.com/" class="cat__core__link--blue cat__core__link--underlined"
+               target="_blank">
+              Google Fonts</a>. This font has to be loaded into <code>head</code>.</p>
+          <br/>
+
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;amp;subset=cyrillic"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h4 class="mb-3 text-black" id="chapter8">
+            <strong>6. Modules</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+          <br/>
+          <h5 id="chapter8-1"><strong>8.1. Core Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>The main module of Clean UI Admin Template. Contains a set of styles for the basic
+              components of Clean UI Admin Template, for example, such as links, font size,
+              background colour, margins from the main content-block and other additional
+              components of the interface (widgets).
+            </li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span
+            style='color:#6969e9; '>"../../modules/core/common/core.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+          <br/>
+          <p>The impact of global settings on this module:</p>
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Applies to</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__config--superclean</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Changes the size of margins of content area (remove paddings, borders, etc)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--squared-corners</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Squared corners of card component of bootstrap framework
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-2"><strong>8.2. Layouts Module</strong></h5>
+          <hr/>
+
+          <p>Deascription:</p>
+          <ul>
+            <li>The set of styles, transforming "Core Module", "Menu-left Module", "Top-bar Module"
+              into a vertical or horizontal display mode, depending on the template
+              configuration.
+            </li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/layouts/common/layouts.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+          <br/>
+          <p>The impact of global settings on this module:</p>
+
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Applies to</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__config--horizontal</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Activates horizontal configuration for "Core Module", "Menu-left Module", "Top-bar Module"
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--boxed</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Activates fixed width configuration for "Core Module", "Menu-left Module", "Top-bar Module"
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--compact</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Activates compact layout type for "Core Module", "Menu-left Module"
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--unfixed</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Activates unfixed blocks layout type for "Core Module", "Menu-left Module", "Menu-left Module"
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-3"><strong>8.3. Top-bar Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>Top bar (header).</li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/top-bar/common/top-bar.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+
+          <br/>
+          <p>Can affect on:</p>
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Module</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                Core Module
+              </td>
+              <td>
+                Changes the size of margins of content area (create space for module block)
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <p>Template:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__top-bar"</span><span
+            style='color:#a65700; '>></span>
+
+    <span style='color:#696969; '>&lt;!-- START: top-bar left side --></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__top-bar__left"</span><span
+              style='color:#a65700; '>></span>
+
+        <span style='color:#696969; '>&lt;!-- START: top-bar logo --></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__top-bar__logo"</span><span
+              style='color:#a65700; '>></span>
+            ... image link logo
+        <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- END: top-bar logo --></span>
+
+        <span style='color:#696969; '>&lt;!-- START: top-bar item --></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__top-bar__item"</span><span
+              style='color:#a65700; '>></span>
+            ... any content
+        <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- END: top-bar item --></span>
+
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#696969; '>&lt;!-- END: top-bar left side --></span>
+
+    <span style='color:#696969; '>&lt;!-- START: top-bar right side --></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__top-bar__right"</span><span
+              style='color:#a65700; '>></span>
+
+        <span style='color:#696969; '>&lt;!-- START: top-bar item  --></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__top-bar__item"</span><span
+              style='color:#a65700; '>></span>
+            ... any content
+        <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- END: top-bar item --></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#696969; '>&lt;!-- END: top-bar right side --></span>
+
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+</pre>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-4"><strong>8.4. Menu-left Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>Left menu (main).</li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/menu-left/common/menu-left.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>script</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>src</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/menu-left/common/menu-left.cleanui.js"</span><span
+              style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span
+              style='color:#800000; font-weight:bold; '>script</span><span style='color:#a65700; '>></span>
+</pre>
+
+          <br/>
+          <p>Can affect on:</p>
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Module</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                Core Module
+              </td>
+              <td>
+                Changes the size of margins of content area (create space for module block)
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <p>Settings:</p>
+
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Applies to</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__menu-left--visible</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Hide / show module block
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__menu-left--colorful</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Activates the automatic addition of random classes (when loading page) to menu items to display a
+                colored line
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__menu-left__item--active</code>
+              </td>
+              <td><code>.cat__menu-left__item</code></td>
+              <td>
+                Active menu item
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__menu-left__submenu--toggled</code>
+              </td>
+              <td><code>.cat__menu-left__submenu</code></td>
+              <td>
+                Expands the cascading menu
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__menu-left--colorful--primary</code>,
+                <code>.cat__menu-left--colorful--secondary</code>,
+                <code>.cat__menu-left--colorful--primary</code>,
+                <code>.cat__menu-left--colorful--default</code>,
+                <code>.cat__menu-left--colorful--info</code>,
+                <code>.cat__menu-left--colorful--success</code>,
+                <code>.cat__menu-left--colorful--warning</code>,
+                <code>.cat__menu-left--colorful--danger</code>,
+                <code>.cat__menu-left--colorful--yellow</code>
+              </td>
+              <td><code>.cat__menu-left__item</code></td>
+              <td>
+                Adds a colored line (depending on the class) to the menu item
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <p>The impact of global settings on this module:</p>
+
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Allplies to</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__config--vertical</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Activates custom scroll
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__config--shadow</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Adds shadow
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <p>Actions:</p>
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Applies to</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__menu-left__action--menu-toggle</code>
+              </td>
+              <td>
+                <code>*</code> (any element on the page)
+              </td>
+              <td>
+                Toggles menu module block
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <p>Template:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left"</span><span
+            style='color:#a65700; '>></span>
+
+    <span style='color:#696969; '>&lt;!-- START: menu-left icon --></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__lock cat__menu-left__action--menu-toggle"</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__pin-button"</span><span
+              style='color:#a65700; '>></span>
+            <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span><span style='color:#696969; '>&lt;!-- --></span><span
+              style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#696969; '>&lt;!-- END: menu-left icon --></span>
+
+    <span style='color:#696969; '>&lt;!-- START: menu-left logo --></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__logo"</span><span
+              style='color:#a65700; '>></span>
+        ... image link logo
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#696969; '>&lt;!-- END: menu-left logo --></span>
+
+    <span style='color:#696969; '>&lt;!-- START: menu-left root list --></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ul</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__list cat__menu-left__list--root"</span><span
+              style='color:#a65700; '>></span>
+
+        <span style='color:#696969; '>&lt;!-- START: menu-left item --></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__item"</span><span
+              style='color:#a65700; '>></span>
+            <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span
+              style='color:#a65700; '>></span>
+                <span style='color:#a65700; '>&lt;</span><span
+              style='color:#800000; font-weight:bold; '>span</span><span style='color:#274796; '> </span><span
+              style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__icon *icon-class"</span><span
+              style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span
+              style='color:#800000; font-weight:bold; '>span</span><span style='color:#a65700; '>></span>
+                ... link title
+            <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- END: menu-left item --></span>
+
+        <span style='color:#696969; '>&lt;!-- START: menu-left item divider--></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__divider"</span><span
+              style='color:#a65700; '>></span><span style='color:#696969; '>&lt;!-- --></span><span
+              style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- END: menu-left item divider --></span>
+
+        <span style='color:#696969; '>&lt;!-- START: menu-left item with submenu --></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__item cat__menu-left__submenu"</span><span
+              style='color:#a65700; '>></span>
+            <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span
+              style='color:#a65700; '>></span>
+                <span style='color:#a65700; '>&lt;</span><span
+              style='color:#800000; font-weight:bold; '>span</span><span style='color:#274796; '> </span><span
+              style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__icon *icon-class"</span><span
+              style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span
+              style='color:#800000; font-weight:bold; '>span</span><span style='color:#a65700; '>></span>
+                ... link title
+            <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span
+              style='color:#a65700; '>></span>
+            <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ul</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__list"</span><span
+              style='color:#a65700; '>></span>
+                <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__item"</span><span
+              style='color:#a65700; '>></span>
+                    <span style='color:#a65700; '>&lt;</span><span
+              style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span
+              style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#6969e9; '>"pages-login-alpha.html"</span><span
+              style='color:#a65700; '>></span>
+                        <span style='color:#a65700; '>&lt;</span><span
+              style='color:#800000; font-weight:bold; '>span</span><span style='color:#274796; '> </span><span
+              style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-left__icon"</span><span
+              style='color:#a65700; '>></span>AA<span style='color:#a65700; '>&lt;/</span><span
+              style='color:#800000; font-weight:bold; '>span</span><span style='color:#a65700; '>></span>
+                        ... link title
+                    <span style='color:#a65700; '>&lt;/</span><span
+              style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span>
+
+                    <span style='color:#696969; '>&lt;!-- START: menu-left item with submenu --></span>
+                    ... next level submenu item
+                    <span style='color:#696969; '>&lt;!-- END: menu-left item with submenu --></span>
+                <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span
+              style='color:#a65700; '>></span>
+            <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>ul</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#696969; '>&lt;!-- END: menu-left item with submenu --></span>
+
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ul</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#696969; '>&lt;!-- END: menu-left root list --></span>
+
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+</pre>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-5"><strong>8.5. Menu-right Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>Right menu.</li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/menu-right/common/menu-right.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>script</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>src</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/menu-right/common/menu-right.cleanui.js"</span><span
+              style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span
+              style='color:#800000; font-weight:bold; '>script</span><span style='color:#a65700; '>></span>
+</pre>
+          <br/>
+          <p>Settings:</p>
+
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Applies to</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__menu-right--visible</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Hide / show module block
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <p>Actions:</p>
+
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Applies to</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__menu-right__action--menu-toggle</code>
+              </td>
+              <td>
+                <code>*</code> (any element on the page)
+              </td>
+              <td>
+                Toggles menu module block
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <p>Template:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-right"</span><span
+            style='color:#a65700; '>></span>
+
+    <span style='color:#696969; '>&lt;!-- START: menu-right header --></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-right__header"</span><span
+              style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>span</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"fa fa-times pull-right cat__menu-right__action--menu-toggle"</span><span
+              style='color:#a65700; '>></span><span style='color:#696969; '>&lt;!-- --></span><span
+              style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>span</span><span
+              style='color:#a65700; '>></span>
+        ... header title
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#696969; '>&lt;!-- END: menu-right header --></span>
+
+    <span style='color:#696969; '>&lt;!-- START: menu-right content --></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#274796; '> </span><span style='color:#074726; '>class</span><span
+              style='color:#808030; '>=</span><span style='color:#6969e9; '>"cat__menu-right__content"</span><span
+              style='color:#a65700; '>></span>
+        ... any content
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+    <span style='color:#696969; '>&lt;!-- END: menu-right content --></span>
+
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span
+              style='color:#a65700; '>></span>
+</pre>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-6"><strong>8.6. Footer Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>Bottom bar (footer).</li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/footer/common/footer.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+          <br/>
+          <p>The impact of global settings on this module:</p>
+
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Applies to</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__config--squared-corners</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Squared corners
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <p>Template:</p>
+          <pre><span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span
+            style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#6969e9; '>cat__footer</span><span
+            style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+
+    <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>!</span><span
+              style='color:#808030; '>-</span><span style='color:#808030; '>-</span> START<span style='color:#800080; '>:</span> footer top <span
+              style='color:#808030; '>-</span><span style='color:#808030; '>-</span><span
+              style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span
+              style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#6969e9; '>cat__footer__top</span><span
+              style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+        <span style='color:#808030; '>.</span><span style='color:#808030; '>.</span><span
+              style='color:#808030; '>.</span> any content
+    <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span
+              style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>!</span><span
+              style='color:#808030; '>-</span><span style='color:#808030; '>-</span> END<span
+              style='color:#800080; '>:</span> footer top <span style='color:#808030; '>-</span><span
+              style='color:#808030; '>-</span><span style='color:#808030; '>></span>
+
+    <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>!</span><span
+              style='color:#808030; '>-</span><span style='color:#808030; '>-</span> START<span style='color:#800080; '>:</span> footer bottom <span
+              style='color:#808030; '>-</span><span style='color:#808030; '>-</span><span
+              style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span
+              style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#6969e9; '>cat__footer__bottom</span><span
+              style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+        <span style='color:#808030; '>.</span><span style='color:#808030; '>.</span><span
+              style='color:#808030; '>.</span> any content
+    <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span
+              style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>!</span><span
+              style='color:#808030; '>-</span><span style='color:#808030; '>-</span> END<span
+              style='color:#800080; '>:</span> footer bottom <span style='color:#808030; '>-</span><span
+              style='color:#808030; '>-</span><span style='color:#808030; '>></span>
+
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span
+              style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+</pre>
+
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-7"><strong>8.7. Themes Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>A set of styles for additional themes (Light Theme, Green Theme, Blue Theme, Red Theme, Orange Theme).
+            </li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/themes/common/themes.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+          <br/>
+          <p>Can affect on:</p>
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Module</th>
+              <th>Used for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                Left-menu Module
+              </td>
+              <td>
+                Changes color of the elements
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Top-bar Module
+              </td>
+              <td>
+                Changes color of the elements
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <p>Settings:</p>
+
+          <table class="table table-hover">
+            <thead class="thead-default">
+            <tr>
+              <th style="width: 30%;">Class</th>
+              <th>Applies to</th>
+              <th>Theme name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <code>.cat__theme--light</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Light Theme
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__theme--green</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Green Theme
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__theme--blue</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Blue Theme
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__theme--red</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Red Theme
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.cat__theme--orange</code>
+              </td>
+              <td><code>body</code></td>
+              <td>
+                Orange Theme
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-8"><strong>8.8. Vendors Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>A set of styles for Bootstrap 4 and for third-party plug-ins (bootstrap, perfect-scrollbar,
+              bootstrap-select, select2, chartist, chartist-tooltip-plugin, chartjs, datatables, datatables-responsive,
+              datatables-fixedcolumns, dropify, editable-table, eonasdan-bootstrap-datetimepicker, fullcalendar,
+              ionrangeslider, jquery-steps, nestable, nprogress, select2, summernote, html5-form-validation,
+              jquery-typeahead, owl-carousel, bootstrap-sweetalert).
+            </li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/vendors/common/vendors.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-9"><strong>8.9. Pages Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>Set of styles for additional pages (login-alpha, login-beta, invoice, lockscreen, page-404, page-500,
+              pricing-tables, register).
+            </li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span
+            style='color:#6969e9; '>"../../modules/pages/common/pages.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-10"><strong>8.10. Apps Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>Set of styles for additional pages (profile, messaging, mail, calendar, gallery).</li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span
+            style='color:#6969e9; '>"../../modules/apps/common/apps.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h5 id="chapter8-11"><strong>8.11. Ecommerce Module</strong></h5>
+          <hr/>
+
+          <p>Description:</p>
+          <ul>
+            <li>Set of styles for additional pages (cart-checkout, dashboard, orders, product-details, product-edit,
+              products-catalog, products-list).
+            </li>
+          </ul>
+
+          <br/>
+          <p>Installation:</p>
+          <pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"stylesheet"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>type</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"text/css"</span><span
+            style='color:#274796; '> </span><span style='color:#074726; '>href</span><span
+            style='color:#808030; '>=</span><span style='color:#6969e9; '>"../../modules/ecommerce/common/ecommerce.cleanui.css"</span><span
+            style='color:#a65700; '>></span>
+</pre>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h4 class="mb-3 text-black" id="chapter9">
+            <strong>9. Plugins</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+          <p>Please read the Official Documentation <i class="icmn-link ml-1"><!-- --></i> to plug-ins that are used on
+            the pages of the
+            template. This will eliminate many issues, related to the work of these plug-ins.</p>
+          <p>You may find links on top of each block in the template pages ("Official Documentation <i
+            class="icmn-link ml-1"><!-- --></i>"
+            button) or in the list below.</p>
+
+          <br/>
+
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead class="thead-default">
+              <tr>
+                <th style="width: 30%;">Name</th>
+                <th>Description</th>
+                <th style="width: 30%;">URL</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  jquery
+                </td>
+                <td>
+                  Core Javascript library
+                </td>
+                <td>
+                  <a href="http://www.jquery.com" target="_blank">http://www.jquery.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  angular
+                </td>
+                <td>
+                  Angular is a development platform for building mobile and desktop web applications
+                </td>
+                <td>
+                  <a href="https://angular.io" target="_blank">https://angular.io</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  jquery
+                </td>
+                <td>
+                  Sleek, intuitive, and powerful front-end framework for faster and easier web development
+                </td>
+                <td>
+                  <a href="" target="_blank"></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  tether
+                </td>
+                <td>
+                  Tether is a JavaScript library for efficiently making an absolutely positioned element stay next to
+                  another element on the page
+                </td>
+                <td>
+                  <a href="http://tether.io/" target="_blank">http://tether.io/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  jquery-mousewheel
+                </td>
+                <td>
+                  A jQuery plugin that adds cross-browser mouse wheel support with delta normalization
+                </td>
+                <td>
+                  <a href="https://github.com/jquery/jquery-mousewheel" target="_blank">https://github.com/jquery/jquery-mousewheel</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  ladda
+                </td>
+                <td>
+                  Buttons with built-in loading indicators, effectively bridging the gap between action and feedback
+                </td>
+                <td>
+                  <a href="http://lab.hakim.se/ladda/" target="_blank">http://lab.hakim.se/ladda/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  bootstrap-select
+                </td>
+                <td>
+                  Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring
+                  additional functionality to standard select elements
+                </td>
+                <td>
+                  <a href="https://silviomoreto.github.io/bootstrap-select/" target="_blank">https://silviomoreto.github.io/bootstrap-select/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  select2
+                </td>
+                <td>
+                  Select2 gives you a customizable select box with support for searching, tagging, remote data sets,
+                  infinite scrolling, and many other highly used options
+                </td>
+                <td>
+                  <a href="https://select2.github.io/" target="_blank">https://select2.github.io/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  html5-form-validation
+                </td>
+                <td>
+                  The jQuery form validation plugin unifies the way to validate HTML forms using JavaScript
+                </td>
+                <td>
+                  <a href="https://github.com/running-coder/jquery-form-validation" target="_blank">https://github.com/running-coder/jquery-form-validation</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  jquery-typeahead
+                </td>
+                <td>
+                  The jQuery Typeahead plugin provides autocomplete preview on search inputs similar to google search
+                  with builtin options and deep customization
+                </td>
+                <td>
+                  <a href="https://github.com/running-coder/jquery-typeahead" target="_blank">https://github.com/running-coder/jquery-typeahead</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  jquery-mask-plugin
+                </td>
+                <td>
+                  A jQuery Plugin to make masks on form fields and html elements
+                </td>
+                <td>
+                  <a href="https://igorescobar.github.io/jQuery-Mask-Plugin/" target="_blank">https://igorescobar.github.io/jQuery-Mask-Plugin/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  autosize
+                </td>
+                <td>
+                  A small, stand-alone script to automatically adjust textarea height
+                </td>
+                <td>
+                  <a href="http://www.jacklmoore.com/autosize/" target="_blank">http://www.jacklmoore.com/autosize/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  bootstrap-show-password
+                </td>
+                <td>
+                  Show/hide password plugin for twitter bootstrap
+                </td>
+                <td>
+                  <a href="https://github.com/wenzhixin/bootstrap-show-password" target="_blank">https://github.com/wenzhixin/bootstrap-show-password</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  eonasdan-bootstrap-datetimepicker
+                </td>
+                <td>
+                  Date/time picker widget based on twitter bootstrap
+                </td>
+                <td>
+                  <a href="https://github.com/Eonasdan/bootstrap-datetimepicker" target="_blank">https://github.com/Eonasdan/bootstrap-datetimepicker</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  fullcalendar
+                </td>
+                <td>
+                  A JavaScript event calendar. Customizable and open source.
+                </td>
+                <td>
+                  <a href="https://fullcalendar.io/" target="_blank">https://fullcalendar.io/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  bootstrap-sweetalert
+                </td>
+                <td>
+                  A beautiful replacement for JavaScript's "alert"
+                </td>
+                <td>
+                  <a href="https://lipis.github.io/bootstrap-sweetalert/" target="_blank">https://lipis.github.io/bootstrap-sweetalert/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  remarkable-bootstrap-notify
+                </td>
+                <td>
+                  This plugin helps to turn standard bootstrap alerts into "growl" like notifications
+                </td>
+                <td>
+                  <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">http://bootstrap-notify.remabledesigns.com/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  summernote
+                </td>
+                <td>
+                  Super Simple WYSIWYG Editor on Bootstrap Summernote is a JavaScript library that helps you create
+                  WYSIWYG editors online
+                </td>
+                <td>
+                  <a href="http://summernote.org/" target="_blank">http://summernote.org/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  owl.carousel
+                </td>
+                <td>
+                  Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider
+                </td>
+                <td>
+                  <a href="http://owlcarousel2.github.io/OwlCarousel2/" target="_blank">http://owlcarousel2.github.io/OwlCarousel2/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  ionrangeslider
+                </td>
+                <td>
+                  Easy, flexible and responsive range slider with skin support
+                </td>
+                <td>
+                  <a href="http://ionden.com/a/plugins/ion.rangeslider/" target="_blank">http://ionden.com/a/plugins/ion.rangeslider/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  nestable
+                </td>
+                <td>
+                  Drag & drop hierarchical list with mouse and touch compatibility
+                </td>
+                <td>
+                  <a href="https://dbushell.com/Nestable/" target="_blank">https://dbushell.com/Nestable/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  datatables
+                </td>
+                <td>
+                  Table plug-in for jQuery
+                </td>
+                <td>
+                  <a href="https://datatables.net/" target="_blank">https://datatables.net/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  datatables-responsive
+                </td>
+                <td>
+                  Responsive is an extension for DataTables that resolves that problem by optimising the table's layout
+                  for different screen sizes through the dynamic insertion and removal of columns from the table
+                </td>
+                <td>
+                  <a href="https://datatables.net/extensions/responsive/" target="_blank">https://datatables.net/extensions/responsive/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  datatables-fixedcolumns
+                </td>
+                <td>
+                  When making use of DataTables x-axis scrolling feature, you may wish to fix the left or right most
+                  columns in place
+                </td>
+                <td>
+                  <a href="" target="_blank"></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  chartist
+                </td>
+                <td>
+                  Simple responsive charts
+                </td>
+                <td>
+                  <a href="https://gionkunz.github.io/chartist-js/" target="_blank">https://gionkunz.github.io/chartist-js/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  chartist-plugin-tooltip
+                </td>
+                <td>
+                  This plugin provides quick and easy tooltips for your chartist charts
+                </td>
+                <td>
+                  <a href="https://github.com/Globegitter/chartist-plugin-tooltip" target="_blank">https://github.com/Globegitter/chartist-plugin-tooltip</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  c3
+                </td>
+                <td>
+                  D3-based reusable chart library
+                </td>
+                <td>
+                  <a href="http://c3js.org/" target="_blank">http://c3js.org/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  d3
+                </td>
+                <td>
+                  Data-Driven Documents
+                </td>
+                <td>
+                  <a href="https://d3js.org/" target="_blank">https://d3js.org/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  peity
+                </td>
+                <td>
+                  Peity (sounds like deity) is a jQuery plugin that converts an element's content into a svg mini pie,
+                  donut, line or bar chart
+                </td>
+                <td>
+                  <a href="http://benpickles.github.io/peity/" target="_blank">http://benpickles.github.io/peity/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  gsap
+                </td>
+                <td>
+                  The new standard for HTML5 and javascript animation
+                </td>
+                <td>
+                  <a href="https://greensock.com/gsap" target="_blank">https://greensock.com/gsap</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  jquery-countTo
+                </td>
+                <td>
+                  jQuery countTo is a jQuery plugin that will count up (or down) to a target number at a specified
+                  speed, rendered within an HTML DOM element
+                </td>
+                <td>
+                  <a href="https://github.com/mhuggins/jquery-countTo" target="_blank">https://github.com/mhuggins/jquery-countTo</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  nprogress
+                </td>
+                <td>
+                  A nanoscopic progress bar. Featuring realistic trickle animations to convince your users that
+                  something is happening!
+                </td>
+                <td>
+                  <a href="http://ricostacruz.com/nprogress/" target="_blank">http://ricostacruz.com/nprogress/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  jquery-steps
+                </td>
+                <td>
+                  An all-in-one wizard plugin that is extremely flexible, compact and feature-rich
+                </td>
+                <td>
+                  <a href="http://www.jquery-steps.com/" target="_blank">http://www.jquery-steps.com/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  chart.js
+                </td>
+                <td>
+                  Simple yet flexible JavaScript charting for designers & developers
+                </td>
+                <td>
+                  <a href="http://www.chartjs.org/" target="_blank">http://www.chartjs.org/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  dropify
+                </td>
+                <td>
+                  Override your input files with style
+                </td>
+                <td>
+                  <a href="https://github.com/JeremyFagis/dropify" target="_blank">https://github.com/JeremyFagis/dropify</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  clean-media-player
+                </td>
+                <td>
+                  Audi / Video Html Players
+                </td>
+                <td>
+                  <a href="http://cleanhtmlplayer.com/" target="_blank">http://cleanhtmlplayer.com/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  editable-table
+                </td>
+                <td>
+                  This tiny (3KB, < 120 lines) jQuery plugin turns any table into an editable spreadsheet
+                </td>
+                <td>
+                  <a href="https://github.com/mindmup/editable-table" target="_blank">https://github.com/mindmup/editable-table</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  font-awesome
+                </td>
+                <td>
+                  The iconic font and CSS toolkit
+                </td>
+                <td>
+                  <a href="http://fontawesome.io/" target="_blank">http://fontawesome.io/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  font-icomoon
+                </td>
+                <td>
+                  General purpose icons. Gets the job done
+                </td>
+                <td>
+                  <a href="https://icomoon.io/#icons-icomoon" target="_blank">https://icomoon.io/#icons-icomoon</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  font-lineraicons
+                </td>
+                <td>
+                  Ultra Crisp Line Icons with Integrity
+                </td>
+                <td>
+                  <a href="https://linearicons.com/" target="_blank">https://linearicons.com/</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  jquery-ui
+                </td>
+                <td>
+                  jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top
+                  of the jQuery JavaScript Library
+                </td>
+                <td>
+                  <a href="https://jqueryui.com/" target="_blank">https://jqueryui.com/</a>
+                </td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <br/>
+          <br/>
+          <br/>
+
+
+          <h4 class="mb-3 text-black" id="chapter10">
+            <strong>10. Changes Log</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+
+          <div class="accordion" id="changes-log">
+            <div class="card">
+              <div class="card-header collapsed" role="tab" id="changes-heading-211" data-toggle="collapse"
+                   data-parent="#changes-log" data-target="#changes-collapse-211" aria-expanded="true"
+                   aria-controls="collapseOne">
+                <div class="card-title">
+                  <span class="accordion-indicator pull-right">
+                      <i class="plus fa fa-plus"></i>
+                      <i class="minus fa fa-minus"></i>
+                  </span>
+                  <a>
+                    <strong>Version 2.1.1</strong>
+                  </a>
+                </div>
+              </div>
+              <div id="changes-collapse-211" class="card-collapse collapse" role="tabcard"
+                   aria-labelledby="changes-heading-211">
+                <div class="card-body">
+                  <p><strong>Html Version:</strong></p>
+                  <p>Major:</p>
+                  <ol>
+                    <li>Upgrade to Boostrap 4.0.0-beta.2</li></li>
+                  </ol>
+
+                  <p>Minor:</p>
+                  <ol>
+                    <li>Dependencies was updated;</li>
+                    <li>Custom Radio & Checkboxes.</li>
+                  </ol>
+
+                  <br/>
+
+                  <p><strong>Angular Version:</strong></p>
+                  <p>Major:</p>
+                  <ol>
+                    <li>Dependencies was updated;</li>
+                    <li>CLI errors was fixed;</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header collapsed" role="tab" id="changes-heading-210" data-toggle="collapse"
+                   data-parent="#changes-log" data-target="#changes-collapse-210" aria-expanded="true"
+                   aria-controls="collapseOne">
+                <div class="card-title">
+                  <span class="accordion-indicator pull-right">
+                      <i class="plus fa fa-plus"></i>
+                      <i class="minus fa fa-minus"></i>
+                  </span>
+                  <a>
+                    <strong>Version 2.1.0</strong>
+                  </a>
+                </div>
+              </div>
+              <div id="changes-collapse-210" class="card-collapse collapse" role="tabcard"
+                   aria-labelledby="changes-heading-210">
+                <div class="card-body">
+                  <p><strong>Html Version:</strong></p>
+                  <p>Major:</p>
+                  <ol>
+                    <li>New modules structure: now it have sub-folders with parts of module and folder for Visual
+                      Builder config;
+                    </li>
+                    <li>New "Dummy Assets Module". All dummy files (img, json data. etc) moved to this module.</li>
+                  </ol>
+
+                  <p>Minor:</p>
+                  <ol>
+                    <li>Gulpfile refactoring (improved performance);</li>
+                    <li>Datatables plugin fixed by our team and moved to "vendors/by_hands", since bug with bootstrap
+                      4.alpha6. Will fixed in next Datatables release. <a
+                        href="https://datatables.net/examples/styling/bootstrap4.html" target="_blank">Link</a> (read
+                      comments);
+                    </li>
+                    <li>jspScrollpane fix. "Menu Left Module" scroll didn't work on touch PC and Laptops displays;</li>
+                    <li>Minor UI changes.</li>
+                  </ol>
+
+                  <br/>
+
+                  <p><strong>Angular Version:</strong></p>
+                  <p>Major:</p>
+                  <ol>
+                    <li>Updated to Angular 4.x</li>
+                    <li>NgBootstrap directives fixes (compatibility with Angular 4.x);</li>
+                    <li>Refactoring components structure for improvement performance in development mode.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h4 class="mb-3 text-black" id="chapter11">
+            <strong>11. Upgrade</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+
+          <div class="accordion" id="upgrade-log">
+            <div class="card">
+              <div class="card-header collapsed" role="tab" id="upgrade-heading-211" data-toggle="collapse"
+                   data-parent="#upgrade-log" data-target="#upgrade-collapse-211" aria-expanded="true"
+                   aria-controls="collapseOne">
+                <div class="card-title">
+                  <span class="accordion-indicator pull-right">
+                      <i class="plus fa fa-plus"></i>
+                      <i class="minus fa fa-minus"></i>
+                  </span>
+                  <a>
+                    <strong>Version 2.1.0 &rarr; Version 2.1.1</strong>
+                  </a>
+                </div>
+              </div>
+              <div id="upgrade-collapse-211" class="card-collapse collapse" role="tabcard"
+                   aria-labelledby="upgrade-heading-211">
+                <div class="card-body">
+                  <ol>
+                    <li>Replace modules and change assets paths to css and js files;</li>
+                    <li>Replace all "card-block" to "card-body" classes (Bootstrap Alpha -> Bootstrap Beta requirement);</li>
+                    <li>Thether.js -> Popper.js (Bootstrap Beta requirement);</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header collapsed" role="tab" id="upgrade-heading-210" data-toggle="collapse"
+                   data-parent="#upgrade-log" data-target="#upgrade-collapse-210" aria-expanded="true"
+                   aria-controls="collapseOne">
+                <div class="card-title">
+                  <span class="accordion-indicator pull-right">
+                      <i class="plus fa fa-plus"></i>
+                      <i class="minus fa fa-minus"></i>
+                  </span>
+                  <a>
+                    <strong>Version 2.0.0 &rarr; Version 2.1.0</strong>
+                  </a>
+                </div>
+              </div>
+              <div id="upgrade-collapse-210" class="card-collapse collapse" role="tabcard"
+                   aria-labelledby="upgrade-heading-210">
+                <div class="card-body">
+                  <ol>
+                    <li>Replace modules and change assets paths to css and js files;</li>
+                    <li>Change dummy images paths to "Dummy Assets Module".</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <h4 class="mb-3 text-black" id="chapter12">
+            <strong>12. End of Documentation</strong>
+            <a href="javascript: void(0);" class="btn btn-sm btn-outline-primary back-to-top ml-3">To Top <i
+              class="icmn-arrow-up2"></i></a>
+          </h4>
+          <hr/>
+
+          <p>Thank you once again for purchasing Clean UI Admin Template. We hope that you will use
+            it in your project with delight.</p>
+
+          <br/>
+          <br/>
+          <br/>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: documentation/index -->
+
+<!-- START: page scripts -->
+<script>
+  $(function () {
+
+
+    // scroll to chapter
+    $('.scroll-to-chapter a').on('click', function (e) {
+
+      e.preventDefault()
+
+      var id = $(this).attr('href'),
+        offset = $(id).offset().top - 85
+
+      $('body, html').stop().animate({'scrollTop': offset}, 500)
+
+    })
+
+    // back to top
+    $('.back-to-top').on('click', function (e) {
+
+      e.preventDefault()
+
+      $('body, html').stop().animate({'scrollTop': 0}, 500)
+
+    })
+
+    // scroll table of contest
+    var tableEl = $('.table-of-contents'),
+      tableOffset = tableEl.offset().top,
+      windowEl = $(window),
+      contentEl = $('.cat__content'),
+      contentOffset = contentEl.offset().top
+
+    windowEl.on('scroll', function () {
+      if (windowEl.width() >= 991) {
+        var windowTop = windowEl.scrollTop()
+
+        if (windowTop > tableOffset) {
+          if (windowTop < contentEl.height() - tableEl.height() - tableOffset - contentOffset - 20 - 200) {
+            tableEl.css('transform', 'translate3d(0px, ' + (windowTop - tableOffset + contentOffset + 20) + 'px, 0px)')
+          }
+        } else {
+          tableEl.css('transform', 'translate3d(0px, 0px, 0px)')
+        }
+      }
+    })
+
+    windowEl.on('resize', function () {
+      if (windowEl < 991) {
+        tableEl.css('transform', 'translate3d(0px, 0px, 0px)')
+      }
+    })
+
+  })
+</script>
+<style>
+  .table-of-contents {
+    transition: all .1s ease-in-out;
+  }
+</style>
+<!-- END: page scripts -->

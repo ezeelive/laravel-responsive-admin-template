@@ -1,0 +1,70 @@
+/* TABLE */
+.table thead th {
+    border-bottom: 1px solid #e4e9f0;
+    outline: none !important;
+}
+
+.table thead th:focus {
+    background: #e4e9f0;
+}
+
+.table td, .table th {
+    border-color: #e4e9f0;
+}
+
+.table td:focus, .table th:focus {
+    background-color: #e4e9f0;
+}
+
+.table tbody tr:first-child td {
+    border-top: none;
+}
+
+.table.table-hover tbody tr:hover {
+    background: #f2f4f8;
+}
+
+.table tr.active, .table th.active {
+    background: #f2f4f8;
+}
+
+.table .thead-inverse th {
+    background: #222034;
+}
+
+.table .thead-default th {
+    background: #f2f4f8;
+}
+
+.table.table-striped tbody tr:nth-of-type(odd) {
+    background: #f2f4f8;
+}
+
+.table.table-vertical-middle td, .table.table-vertical-middle th {
+    vertical-align: middle;
+}
+
+.table-inverse {
+    color: #b8beca;
+}
+
+.table-inverse thead th {
+    border-bottom-color: #393749;
+    color: #ffffff;
+}
+
+.table-inverse th, .table-inverse td {
+    border-top-color: #393749;
+}
+
+.table-inverse th, .table-inverse td, .table-inverse thead th {
+    background: #222034;
+}
+
+.table-inverse th:focus, .table-inverse td:focus, .table-inverse thead th:focus {
+    background: #222034;
+}
+
+.table-inverse tr.active, .table-inverse th.active {
+    background: #eef0f4;
+}

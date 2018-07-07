@@ -1,0 +1,193 @@
+// Import mixins from "core" module
+@import '../../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  VERTICAL LAYOUT STYLES:
+    VERTICAL BOXED, VERTICAL ICONBAR;
+    UNFIXED TOP BAR MODIFIER */
+
+body.cat {
+    &__config {
+        &--vertical {
+
+            // unfixed top bar
+            &.cat__config--unfixed {
+
+                // next styles affects on "top-bar" module
+                // set body top padding to 0 (remove space for fixed top bar)
+                padding-top: 0;
+                // remove fixed position from top bar
+                .cat__top-bar {
+                    position: static;
+                }
+            }
+
+            // vertical boxed layout
+            &.cat__config--boxed {
+
+                // next styles affects on "top-bar" module
+                // custom styles of top bar module
+                .cat__top-bar {
+                    width: auto !important;
+                    max-width: $xl-max-width;
+                    margin: 0px auto !important;
+                    right: 0;
+                    left: rem(50);
+                    padding-left: rem(20);
+
+                    // body width < $xl-min-width
+                    @media (max-width: $xl-max-width) {
+                        padding-left: 0;
+                    }
+
+                    @media (min-width: $xl-min-width) {
+                        // hide logo on body width > $xl-min-width
+                        &__logo {
+                            display: none;
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                // next styles affects on "styles-core" module
+                // set body padding for create space for left menu
+                padding-left: rem(50);
+
+                @media (max-width: $sm-max-width) {
+                    padding-left: 0;
+                }
+
+                .cat__content {
+                    width: auto !important;
+                    max-width: $xl-max-width;
+                    margin: 0px auto !important;
+
+                    // add background
+                    @media (min-width: $sm-min-width) {
+                        background: $white;
+                    }
+                }
+
+            }
+
+            // vertical compact layout
+            &.cat__config--compact {
+
+                // > 768px (breakpoint) styles
+                @media (min-width: $sm-min-width) {
+
+                    // next styles affects on "styles-core" module
+                    // set body padding for create space for left menu
+                    .cat__content {
+                        margin-left: rem(150);
+                    }
+
+                    // next styles affects on "top-bar" module
+                    // hide logo
+                    .cat__top-bar {
+                        left: rem(150);
+                        padding-left: rem(20);
+                        &__logo {
+                            display: none;
+                        }
+                    }
+
+                    // next styles affects on "menu-left" module
+                    // custom styles for left menu
+                    .cat__menu-left {
+                        transform: none;
+                        transition: none !important;
+                        width: rem(150);
+
+                        &__lock {
+                            display: none;
+                        }
+
+                        &__logo {
+                            width: rem(150);
+                        }
+
+                        &__item {
+                            > a {
+                                padding: rem(12);
+                                text-align: center;
+
+                                > .badge {
+                                    position: absolute;
+                                    top: rem(6);
+                                    right: rem(6);
+                                }
+
+                                &:before {
+                                    display: block;
+                                    content: '';
+                                    width: 80%;
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 10%;
+                                    height: 1px;
+                                    background: $black-lighten-more;
+                                }
+                            }
+                        }
+
+                        &__icon {
+                            position: static;
+                            display: block;
+                            text-align: center;
+                            width: 100%;
+                            font-size: rem(18);
+                            margin-bottom: rem(5);
+                        }
+
+                        &__submenu {
+                            &.cat__menu-left__item {
+                                > a {
+                                    &:after {
+                                        position: absolute;
+                                        top: 50%;
+                                        margin-top: rem(-5);
+                                        right: rem(15);
+                                    }
+                                }
+                            }
+
+                            > .cat__menu-left__list {
+                                .cat__menu-left__icon {
+                                    display: none;
+                                }
+
+                                .cat__menu-left__item {
+                                    &:before {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        &__divider {
+                            display: none;
+                        }
+                    }
+                }
+
+                // compact and boxed
+                &.cat__config--boxed {
+                    @media (min-width: $sm-min-width) {
+                        padding-left: rem(150);
+                    }
+                }
+
+                // unfixed top bar margin on iconbar layout
+                &.cat__config--unfixed {
+
+                    // next styles affects on "top-bar" module
+                    // remove fixed position from top bar
+                    .cat__top-bar {
+                        margin-left: rem(150);
+                    }
+                }
+            }
+        }
+    }
+}

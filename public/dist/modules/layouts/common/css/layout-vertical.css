@@ -1,0 +1,134 @@
+/*  VERTICAL LAYOUT STYLES:
+    VERTICAL BOXED, VERTICAL ICONBAR;
+    UNFIXED TOP BAR MODIFIER */
+body.cat__config--vertical.cat__config--unfixed {
+    padding-top: 0;
+}
+
+body.cat__config--vertical.cat__config--unfixed .cat__top-bar {
+    position: static;
+}
+
+body.cat__config--vertical.cat__config--boxed {
+    padding-left: 3.57rem;
+}
+
+body.cat__config--vertical.cat__config--boxed .cat__top-bar {
+    width: auto !important;
+    max-width: 1199px;
+    margin: 0px auto !important;
+    right: 0;
+    left: 3.57rem;
+    padding-left: 1.42rem;
+}
+
+@media (max-width: 1199px) {
+    body.cat__config--vertical.cat__config--boxed .cat__top-bar {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    body.cat__config--vertical.cat__config--boxed .cat__top-bar__logo {
+        display: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    body.cat__config--vertical.cat__config--boxed {
+        padding-left: 0;
+    }
+}
+
+body.cat__config--vertical.cat__config--boxed .cat__content {
+    width: auto !important;
+    max-width: 1199px;
+    margin: 0px auto !important;
+}
+
+@media (min-width: 768px) {
+    body.cat__config--vertical.cat__config--boxed .cat__content {
+        background: #ffffff;
+    }
+}
+
+@media (min-width: 768px) {
+    body.cat__config--vertical.cat__config--compact .cat__content {
+        margin-left: 10.71rem;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__top-bar {
+        left: 10.71rem;
+        padding-left: 1.42rem;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__top-bar__logo {
+        display: none;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        -webkit-transition: none !important;
+        -o-transition: none !important;
+        transition: none !important;
+        width: 10.71rem;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__lock {
+        display: none;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__logo {
+        width: 10.71rem;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__item > a {
+        padding: 0.85rem;
+        text-align: center;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__item > a > .badge {
+        position: absolute;
+        top: 0.42rem;
+        right: 0.42rem;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__item > a:before {
+        display: block;
+        content: '';
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        height: 1px;
+        background: #393749;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__icon {
+        position: static;
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 1.28rem;
+        margin-bottom: 0.35rem;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__submenu.cat__menu-left__item > a:after {
+        position: absolute;
+        top: 50%;
+        margin-top: -0.36rem;
+        right: 1.07rem;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__submenu > .cat__menu-left__list .cat__menu-left__icon {
+        display: none;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__submenu > .cat__menu-left__list .cat__menu-left__item:before {
+        display: none;
+    }
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__divider {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    body.cat__config--vertical.cat__config--compact.cat__config--boxed {
+        padding-left: 10.71rem;
+    }
+}
+
+body.cat__config--vertical.cat__config--compact.cat__config--unfixed .cat__top-bar {
+    margin-left: 10.71rem;
+}

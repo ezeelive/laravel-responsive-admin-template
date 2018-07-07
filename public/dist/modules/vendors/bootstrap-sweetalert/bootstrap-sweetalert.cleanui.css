@@ -1,0 +1,79 @@
+/*  BOOTSTRAP SWEETALERT */
+.sweet-overlay {
+    background: rgba(14, 11, 32, 0.3);
+}
+
+.sweet-alert h2 {
+    font-weight: 400;
+    position: relative;
+    margin: 30px 0px 15px;
+}
+
+.sweet-alert p {
+    margin: 0px 0px 10px;
+}
+
+.sweet-alert .lead {
+    font-weight: 400;
+    font-size: 18px;
+    color: #222034;
+    margin-bottom: 20px;
+}
+
+.sweet-alert .btn {
+    min-width: 150px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    margin: 0px 5px 15px;
+    border: none !important;
+}
+
+.sweet-alert .btn-success {
+    background: #46be8a;
+}
+
+.sweet-alert .btn-warning {
+    border-color: #f39834;
+}
+
+.sweet-alert .btn-danger {
+    border-color: #fb434a;
+}
+
+.sweet-alert .btn-info {
+    border-color: #0887c9;
+}
+
+.sweet-alert .sa-icon.sa-success .line {
+    background-color: #46be8a;
+}
+
+.sweet-alert .sa-icon.sa-success .placeholder {
+    border-color: #46be8a;
+}
+
+.sweet-alert .sa-icon.sa-warning {
+    border-color: #f39834;
+}
+
+.sweet-alert .sa-icon.sa-warning span {
+    background: #f39834;
+}
+
+.sweet-alert .sa-icon.sa-error {
+    border-color: #fb434a;
+}
+
+.sweet-alert .sa-icon.sa-error .line {
+    background-color: #fb434a;
+}
+
+.sweet-alert .sa-icon.sa-info {
+    border-color: #0887c9;
+}
+
+.sweet-alert .sa-icon.sa-info:before, .sweet-alert .sa-icon.sa-info:after {
+    background-color: #0887c9;
+}

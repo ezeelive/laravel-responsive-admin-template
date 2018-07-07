@@ -1,0 +1,16 @@
+/*  DROPIFY */
+.dropify-wrapper {
+    border: 1px solid #e4e9f0;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+
+.dropify-wrapper:hover {
+    background-image: -webkit-linear-gradient(135deg, #f2f4f8 25%, transparent 25%, transparent 50%, #f2f4f8 50%, #f2f4f8 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(135deg, #f2f4f8 25%, transparent 25%, transparent 50%, #f2f4f8 50%, #f2f4f8 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, #f2f4f8 25%, transparent 25%, transparent 50%, #f2f4f8 50%, #f2f4f8 75%, transparent 75%, transparent);
+}
+
+.dropify-wrapper.disabled {
+    opacity: .5;
+}

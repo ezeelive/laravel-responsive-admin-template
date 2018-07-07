@@ -1,0 +1,44 @@
+// Import mixins from "core" module
+@import '../../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* BADGES */
+
+
+.badge {
+    font-weight: normal;
+    background: $white;
+    color: $secondary;
+    &.badge-default {
+        background: $default;
+        color: $white;
+    }
+    &.badge-primary {
+        background: $primary;
+        color: $white;
+    }
+    &.badge-secondary {
+        background: $secondary;
+        color: $white;
+    }
+    &.badge-success {
+        background: $success;
+        color: $white;
+    }
+    &.badge-info {
+        background: $info;
+        color: $white;
+    }
+    &.badge-danger {
+        background: $danger;
+        color: $white;
+    }
+    &.badge-warning {
+        background: $warning;
+        color: $white;
+    }
+}
+
+.btn .badge {
+    top: 1px;
+}

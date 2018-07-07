@@ -1,0 +1,286 @@
+/*  STYLES FOR "APPS" MODULE */
+.cat__apps__chat-block__item {
+    padding: 0.71rem 0;
+}
+
+.cat__apps__chat-block__item--right .cat__apps__chat-block__content {
+    margin-left: 0px;
+    margin-right: 70px;
+}
+
+.cat__apps__chat-block__item--right .cat__apps__chat-block__content:after {
+    left: auto;
+    right: 1rem;
+    border: 0.5rem solid transparent;
+    border-left-color: #f2f4f8;
+}
+
+.cat__apps__chat-block__item--right .cat__apps__chat-block__avatar {
+    float: right;
+}
+
+.cat__apps__chat-block__avatar {
+    float: left;
+}
+
+.cat__apps__chat-block__content {
+    padding: 0.71rem 1.07rem 0.07rem;
+    background: #f2f4f8;
+    margin-left: 5rem;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    position: relative;
+}
+
+.cat__apps__chat-block__content:after {
+    position: absolute;
+    top: 1.57rem;
+    left: -1rem;
+    width: 0;
+    height: 0;
+    display: block;
+    content: '';
+    border: 0.5rem solid transparent;
+    border-right-color: #f2f4f8;
+}
+
+.cat__apps__calendar {
+    margin: -1.25rem -1.25rem -webkit-calc(-1.25rem - 1px) -webkit-calc(-1.25rem - 1px);
+    margin: -1.25rem -1.25rem calc(-1.25rem - 1px) calc(-1.25rem - 1px);
+}
+
+.cat__apps__calendar .fc-toolbar {
+    padding: 1.42rem 1.42rem 0;
+}
+
+.cat__apps__profile__card {
+    border: none;
+    background: #b8beca;
+    margin-top: -8.58rem;
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 2.5rem 2.5rem 1.78rem 2.5rem;
+}
+
+@media (max-width: 1199px) {
+    .cat__apps__profile__card {
+        margin-top: 0;
+    }
+}
+
+.cat__apps__profile__wall__item {
+    margin-top: 1.42rem;
+    margin-bottom: 1.42rem;
+    padding-bottom: 1.42rem;
+    border-bottom: 1px solid #e4e9f0;
+}
+
+.cat__apps__profile__wall__avatar {
+    float: left;
+}
+
+.cat__apps__profile__wall__content {
+    margin-left: 5rem;
+}
+
+.cat__apps__profile__wall__comments {
+    border-top: 1px solid #e4e9f0;
+    margin-top: 1.42rem;
+}
+
+.cat__apps__profile__wall__message-img {
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    margin: 0 0.35rem 0.71rem 0px;
+    max-width: 14.28rem;
+}
+
+.cat__apps__profile__wall__media-object {
+    margin: 0 0 1.42rem 0;
+    max-width: 35.71rem;
+}
+
+.cat__apps__messaging {
+    overflow-x: hidden;
+}
+
+.cat__apps__messaging__header {
+    border-bottom: 1px solid #e4e9f0;
+    padding: 0 1.07rem 0.71rem;
+    margin: -0.29rem -1.08rem 0;
+    position: relative;
+}
+
+.cat__apps__messaging__header i {
+    position: absolute;
+    top: 0.57rem;
+    right: 1.92rem;
+    color: #74708d;
+}
+
+.cat__apps__messaging__header button {
+    position: absolute;
+    top: 0.21rem;
+    right: 1.57rem;
+    border: none;
+    background: none;
+    width: 1.78rem;
+    height: 1.78rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.cat__apps__messaging__header__input {
+    font-size: 1rem;
+    height: 2.14rem;
+    padding-right: 2.14rem;
+}
+
+.cat__apps__messaging__list {
+    margin: 0 -1.08rem;
+}
+
+.cat__apps__messaging__list--no-avatar .cat__apps__messaging__tab__content {
+    margin-left: 0 !important;
+}
+
+.cat__apps__messaging__tab {
+    padding: 1.07rem 1.07rem 1.42rem;
+    border-bottom: 1px solid #e4e9f0;
+}
+
+.cat__apps__messaging__tab:hover {
+    background: #f2f4f8;
+}
+
+.cat__apps__messaging__tab--selected {
+    background: #acb7bf !important;
+    color: #ffffff;
+}
+
+.cat__apps__messaging__tab--selected .cat__apps__messaging__tab__time,
+.cat__apps__messaging__tab--selected .cat__apps__messaging__tab__name,
+.cat__apps__messaging__tab--selected .cat__apps__messaging__tab__text {
+    color: #ffffff;
+}
+
+.cat__apps__messaging__tab__avatar {
+    float: left;
+}
+
+.cat__apps__messaging__tab__avatar .cat__core__avatar {
+    border: 2px solid #ffffff;
+}
+
+.cat__apps__messaging__tab__content {
+    margin-left: 5rem;
+    padding-top: 0.35rem;
+}
+
+.cat__apps__messaging__tab__time {
+    color: #b8beca;
+    float: right;
+    position: relative;
+    top: 0.21rem;
+}
+
+.cat__apps__messaging__tab__name {
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    margin-right: 2.14rem;
+}
+
+.cat__apps__messaging__tab__text {
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    color: #b8beca;
+}
+
+.cat__apps__messaging__nav-tabs {
+    display: inline-block;
+    height: 2.14rem;
+}
+
+.cat__apps__messaging__nav-tabs .nav {
+    border-bottom: none !important;
+}
+
+.cat__apps__messaging__nav-tabs .nav-link {
+    padding-bottom: 0.85rem;
+}
+
+.cat__apps__messaging .mdtc-clnplra-main-player:not(.mdtc-clnplra-dark-theme) .mdtc-clnplra-interface,
+.cat__apps__messaging .mdtc-clnplrv-main-player:not(.mdtc-clnplrv-dark-theme) .mdtc-clnplrv-interface {
+    background: #ffffff;
+}
+
+.cat__apps__gallery__item {
+    float: left;
+    width: 14.28rem;
+    height: 11.42rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    -webkit-transition: all 0.05s ease-in-out;
+    -o-transition: all 0.05s ease-in-out;
+    transition: all 0.05s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .cat__apps__gallery__item {
+        width: 100%;
+        height: 19.28rem;
+    }
+}
+
+.cat__apps__gallery__item:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    z-index: 2;
+}
+
+.cat__apps__gallery__item:hover .cat__apps__gallery__item__controls {
+    display: block;
+}
+
+.cat__apps__gallery__item__controls {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 4.07rem 1.42rem 0;
+    text-align: center;
+    background: rgba(14, 11, 32, 0.8);
+}
+
+@media (max-width: 991px) {
+    .cat__apps__gallery__item__controls {
+        text-align: left;
+        padding-top: 1.42rem;
+    }
+}
+
+.cat__apps__gallery__item--with-controls:before {
+    position: absolute;
+    top: -1.08rem;
+    right: -1.08rem;
+    width: 0;
+    height: 0;
+    content: '';
+    z-index: 3;
+    border: 1.07rem solid transparent;
+    border-bottom-color: #0190fe;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}

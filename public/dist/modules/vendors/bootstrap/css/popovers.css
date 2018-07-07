@@ -1,0 +1,64 @@
+/* TOOLTIPS & POPOVERS */
+.popover {
+    border-color: #d2d9e5;
+}
+
+.popover .popover-inner {
+    border-width: 0.57rem;
+}
+
+.popover .popover-inner:after {
+    border-width: 0.5rem;
+}
+
+.popover.left:before, .popover.bs-tether-element-attached-left:before {
+    border-right-color: #d2d9e5;
+}
+
+.popover.right:before, .popover.bs-tether-element-attached-right:before {
+    border-left-color: #d2d9e5;
+}
+
+.popover.top:before, .popover.bs-tether-element-attached-top:before {
+    border-bottom-color: #d2d9e5;
+}
+
+.popover.bottom:before, .popover.bs-tether-element-attached-bottom:before {
+    border-top-color: #d2d9e5;
+}
+
+.popover .popover-title {
+    font-weight: 600;
+    background: #f2f4f8;
+    margin: -1px;
+    padding: 0.57rem 1.07rem;
+    -webkit-border-radius: 3px 3px 0px 0px;
+            border-radius: 3px 3px 0px 0px;
+}
+
+.tooltip .tooltip-inner {
+    background: #222034;
+    padding: 0.28rem 1.07rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.tooltip.left .tooltip-inner:before,
+.tooltip.bs-tether-element-attached-left .tooltip-inner:before {
+    border-right-color: #222034;
+}
+
+.tooltip.right .tooltip-inner:before,
+.tooltip.bs-tether-element-attached-right .tooltip-inner:before {
+    border-left-color: #222034;
+}
+
+.tooltip.top .tooltip-inner:before,
+.tooltip.bs-tether-element-attached-top .tooltip-inner:before {
+    border-bottom-color: #222034;
+}
+
+.tooltip.bottom .tooltip-inner:before,
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner:before {
+    border-top-color: #222034;
+}

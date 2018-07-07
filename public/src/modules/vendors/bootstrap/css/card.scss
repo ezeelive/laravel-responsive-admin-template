@@ -1,0 +1,18 @@
+// Import mixins from "core" module
+@import '../../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* CARDS */
+
+
+.card, .card-header, .list-group-item, .card-footer {
+    border-color: $gray-border;
+}
+
+.card-header, .card-footer {
+    background: $white;
+}
+
+.card {
+    margin-bottom: rem(19);
+}

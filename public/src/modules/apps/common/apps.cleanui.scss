@@ -1,0 +1,272 @@
+// Import mixins from "core" module
+@import '../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  STYLES FOR "APPS" MODULE */
+
+.cat {
+    &__apps {
+
+        // chat block
+        &__chat-block {
+            &__item {
+                padding: rem(10) 0;
+
+                &--right {
+                    .cat__apps__chat-block__content {
+                        margin-left: 0px;
+                        margin-right: 70px;
+
+                        &:after {
+                            left: auto;
+                            right: rem(14);
+                            border: rem(7) solid transparent;
+                            border-left-color: #f2f4f8;
+                        }
+                    }
+
+                    .cat__apps__chat-block__avatar {
+                        float: right;
+                    }
+                }
+            }
+            &__avatar {
+                float: left;
+            }
+            &__content {
+                padding: rem(10) rem(15) rem(1);
+                background: #f2f4f8;
+                margin-left: rem(70);
+                border-radius: 5px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    top: rem(22);
+                    left: rem(-14);
+                    width: 0;
+                    height: 0;
+                    display: block;
+                    content: '';
+                    border: rem(7) solid transparent;
+                    border-right-color: #f2f4f8;
+                }
+            }
+        }
+
+        // calendar app
+        &__calendar {
+            margin: -1.25rem -1.25rem calc(-1.25rem - 1px) calc(-1.25rem - 1px);
+
+            .fc-toolbar {
+                padding: rem(20) rem(20) 0;
+            }
+        }
+
+        // profile app
+        &__profile {
+            &__card {
+                border: none;
+                background: $gray-darken;
+                margin-top: rem(-120);
+                background-size: cover;
+                padding: rem(35) rem(35) rem(25) rem(35);
+
+                @media (max-width: $xl-max-width) {
+                    margin-top: 0;
+                }
+            }
+
+            &__wall {
+                &__item {
+                    margin-top: rem(20);
+                    margin-bottom: rem(20);
+                    padding-bottom: rem(20);
+                    border-bottom: 1px solid $gray-border;
+                }
+                &__avatar {
+                    float: left;
+                }
+                &__content {
+                    margin-left: rem(70);
+                }
+                &__comments {
+                    border-top: 1px solid $gray-border;
+                    margin-top: rem(20);
+                }
+                &__message-img {
+                    border-radius: 3px;
+                    margin: 0 rem(5) rem(10) 0px;
+                    max-width: rem(200);
+                }
+                &__media-object {
+                    margin: 0 0 rem(20) 0;
+                    max-width: rem(500);
+                }
+            }
+        }
+
+        // messaging app
+        &__messaging {
+            overflow-x: hidden;
+
+            &__header {
+                border-bottom: 1px solid $gray-border;
+                padding: 0 rem(15) rem(10);
+                margin: rem(-4) rem(-15) 0;
+                position: relative;
+                i {
+                    position: absolute;
+                    top: rem(8);
+                    right: rem(27);
+                    color: $text;
+                }
+                button {
+                    position: absolute;
+                    top: rem(3);
+                    right: rem(22);
+                    border: none;
+                    background: none;
+                    width: rem(25);
+                    height: rem(25);
+                    outline: none;
+                    cursor: pointer;
+                }
+                &__input {
+                    font-size: rem(14);
+                    height: rem(30);
+                    padding-right: rem(30);
+                }
+            }
+
+            &__list {
+                margin: 0 rem(-15);
+
+                &--no-avatar {
+                    .cat__apps__messaging__tab__content {
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+
+            &__tab {
+                padding: rem(15) rem(15) rem(20);
+                border-bottom: 1px solid $gray-border;
+                &:hover {
+                    background: $gray-lighten-more;
+                }
+                &--selected {
+                    background: $default !important;
+                    color: $white;
+                    .cat__apps__messaging__tab__time,
+                    .cat__apps__messaging__tab__name,
+                    .cat__apps__messaging__tab__text {
+                        color: $white;
+                    }
+                }
+                &__avatar {
+                    float: left;
+                    .cat__core__avatar {
+                        border: 2px solid $white;
+                    }
+                }
+                &__content {
+                    margin-left: rem(70);
+                    padding-top: rem(5);
+                }
+                &__time {
+                    color: $gray-darken;
+                    float: right;
+                    position: relative;
+                    top: rem(3);
+                }
+                &__name {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    margin-right: rem(30);
+                }
+                &__text {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: $gray-darken;
+                }
+            }
+
+            &__nav-tabs {
+                display: inline-block;
+                height: rem(30);
+                .nav {
+                    border-bottom: none !important;
+                }
+                .nav-link {
+                    padding-bottom: rem(12);
+                }
+            }
+
+            // next styles affected on "vendors#cleanhtmlplayer"
+            // background color
+            .mdtc-clnplra-main-player:not(.mdtc-clnplra-dark-theme) .mdtc-clnplra-interface,
+            .mdtc-clnplrv-main-player:not(.mdtc-clnplrv-dark-theme) .mdtc-clnplrv-interface {
+                background: $white;
+            }
+        }
+
+        // gallery app
+        &__gallery {
+            &__item {
+                float: left;
+                width: rem(200);
+                height: rem(160);
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+                background-position: center;
+                background-size: cover;
+                @media (max-width: $sm-max-width) {
+                    width: 100%;
+                    height: rem(270);
+                }
+                @include transition-fast();
+                &:hover {
+                    transform: scale(1.1);
+                    z-index: 2;
+                    .cat__apps__gallery__item__controls {
+                        display: block;
+                    }
+                }
+                &__controls {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: rem(57) rem(20) 0;
+                    text-align: center;
+                    background: rgba($black, .8);
+
+                    @media (max-width: $md-max-width) {
+                        text-align: left;
+                        padding-top: rem(20);
+                    }
+                }
+                &--with-controls {
+                    &:before {
+                        position: absolute;
+                        top: rem(-15);
+                        right: rem(-15);
+                        width: 0;
+                        height: 0;
+                        content: '';
+                        z-index: 3;
+                        border: rem(15) solid transparent;
+                        border-bottom-color: $primary;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}

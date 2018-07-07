@@ -1,0 +1,231 @@
+/*  STYLES FOR "TOP-BAR" MODULE */
+body {
+    padding-top: 4.64rem;
+}
+
+.cat__top-bar {
+    position: fixed;
+    z-index: 990;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4.64rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e4e9f0;
+    padding-right: 1.42rem;
+    color: #74708d;
+}
+
+.cat__top-bar__logo {
+    width: 14.28rem;
+    height: 4.64rem;
+    display: inline-block;
+    padding: 1rem 1.28rem;
+    margin-right: 1.42rem;
+}
+
+.cat__top-bar__logo img {
+    max-height: 2.5rem;
+}
+
+@media (max-width: 991px) {
+    .cat__top-bar__logo {
+        width: 10.71rem;
+    }
+}
+
+.cat__top-bar__avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #eef0f4;
+    border-color: #d2d9e5;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-border-radius: 500px;
+    border-radius: 500px;
+}
+
+.cat__top-bar__avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.cat__top-bar__avatar-dropdown .dropdown-toggle {
+    padding-right: 1.28rem;
+    display: inline-block;
+}
+
+.cat__top-bar__avatar-dropdown .dropdown-toggle:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.08rem;
+    right: 0rem;
+}
+
+.cat__top-bar__left {
+    float: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+}
+
+.cat__top-bar__left .cat__top-bar__item {
+    margin-right: 2.14rem;
+}
+
+.cat__top-bar__right {
+    float: right;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+}
+
+.cat__top-bar__right .cat__top-bar__item {
+    margin-left: 2.14rem;
+}
+
+.cat__top-bar__item {
+    padding-top: 0.35rem;
+}
+
+.cat__top-bar__mini-chart {
+    height: 2.14rem;
+    line-height: 2.14rem;
+}
+
+.cat__top-bar__mini-chart__inner {
+    height: 80%;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: sub;
+    margin: 0 0.35rem;
+}
+
+.cat__top-bar__mini-chart__inner i {
+    display: inline-block;
+    float: left;
+    width: 4px;
+    background: #0190fe;
+    margin-right: 1px;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+}
+
+.cat__top-bar__menu-button {
+    cursor: pointer;
+    height: 2.14rem;
+    padding-top: 0.28rem;
+    color: #d2d9e5;
+    font-size: 1.14rem;
+    -webkit-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.cat__top-bar__menu-button:hover {
+    color: #b8beca;
+}
+
+.cat__top-bar__search {
+    border-bottom: 1px solid #e4e9f0;
+    margin-top: 0.28rem;
+}
+
+.cat__top-bar__search input {
+    border: none;
+    position: relative;
+    top: -1px;
+    opacity: .6;
+    width: 11.42rem;
+}
+
+.cat__top-bar__search input:focus {
+    opacity: 1;
+}
+
+.cat__top-bar__search i {
+    cursor: pointer;
+    color: #d2d9e5;
+    margin-right: 0.35rem;
+}
+
+.cat__top-bar__search i:hover {
+    color: #615d7c;
+}
+
+/*  NOTIFICATION BLOCK (TOP MENU) */
+.cat__top-bar__activity {
+    width: 20.71rem;
+    margin: -0.5rem 0;
+    background: #ffffff;
+}
+
+.cat__top-bar__activity__item {
+    border-bottom: 1px solid #e4e9f0;
+    padding: 0.71rem 0;
+    position: relative;
+}
+
+.cat__top-bar__activity__item:last-child {
+    border-bottom: 0;
+}
+
+.cat__top-bar__activity__item:hover {
+    background: #eef0f4;
+}
+
+.cat__top-bar__activity__item:hover .cat__top-bar__activity__icon {
+    background: #c0bdd0;
+    color: #ffffff;
+    border-color: #c0bdd0;
+}
+
+.cat__top-bar__activity__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 0.85rem;
+    font-size: 1.14rem;
+    width: 2.85rem;
+    text-align: center;
+    color: #d2d9e5;
+    background: #f2f4f8;
+    border-bottom: 1px solid #eef0f4;
+}
+
+.cat__top-bar__activity__inner {
+    margin-left: 3.57rem;
+    padding-right: 1.07rem;
+}
+
+.cat__top-bar__activity__inner label {
+    font-size: 0.85rem;
+}
+
+.cat__top-bar__activity__descr {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cat__top-bar__activity__title > span {
+    font-size: 0.92rem;
+    color: #d2d9e5;
+}

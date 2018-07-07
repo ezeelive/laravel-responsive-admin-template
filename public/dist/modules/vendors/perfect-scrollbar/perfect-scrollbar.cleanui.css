@@ -1,0 +1,15 @@
+/*  PERFECT CUSTOM STYLES */
+.ps--theme_cleanui.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+    width: 4px !important;
+}
+
+.ps--theme_cleanui.ps:hover > .ps__scrollbar-y-rail:hover,
+.ps--theme_cleanui.ps:hover > .ps__scrollbar-x-rail:hover {
+    background: none;
+    opacity: .7;
+}
+
+.ps--theme_cleanui.ps > .ps__scrollbar-y-rail > .ps__scrollbar-x,
+.ps--theme_cleanui.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+    background-color: #acb7bf !important;
+}

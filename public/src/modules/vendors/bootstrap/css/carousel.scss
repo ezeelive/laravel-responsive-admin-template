@@ -1,0 +1,16 @@
+// Import mixins from "core" module
+@import '../../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* CAROUSEL */
+
+.carousel-indicators {
+    li {
+        background: $gray-lighten;
+        opacity: .5;
+        &.active {
+            opacity: 1;
+            background: $gray-lighten;
+        }
+    }
+}

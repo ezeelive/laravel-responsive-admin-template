@@ -1,0 +1,36 @@
+/* PAGINATION */
+.pagination .page-link {
+    border-color: #e4e9f0;
+    color: #74708d;
+    outline: none;
+    margin-bottom: 0.71rem;
+}
+
+.pagination .page-link:hover, .pagination .page-link:focus {
+    background: #acb7bf;
+    color: #ffffff;
+    border-color: #acb7bf;
+}
+
+.pagination .page-item.disabled .page-link {
+    background: #f2f4f8;
+}
+
+.pagination .page-item.active .page-link {
+    background: #0190fe;
+    border-color: #0190fe;
+}
+
+.pager li > a {
+    border-color: #b8beca;
+    color: #393749;
+    outline: none;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.pager li > a:hover, .pager li > a:focus {
+    background: #acb7bf;
+    color: #ffffff;
+    border-color: #acb7bf;
+}

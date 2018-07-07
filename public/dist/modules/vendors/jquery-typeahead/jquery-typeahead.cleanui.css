@@ -1,0 +1,56 @@
+/*  JQUERY TYPEAHED (AUTOCOMPLETE) */
+.typeahead__container {
+    position: relative;
+    color: #74708d;
+}
+
+.typeahead__container .typeahead__field {
+    position: relative;
+    z-index: 1;
+}
+
+.typeahead__container .typeahead__result {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    width: 100%;
+    margin-top: -2px;
+}
+
+.typeahead__container .typeahead__result .typeahead__list {
+    background: #ffffff;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #0190fe;
+    -webkit-border-radius: 0px 0px 3px 3px;
+            border-radius: 0px 0px 3px 3px;
+    border-top: 1px solid #b8beca;
+}
+
+.typeahead__container .typeahead__result .typeahead__list .typeahead__item a {
+    display: block;
+    padding: 6px 16px;
+    color: #74708d;
+}
+
+.typeahead__container .typeahead__result .typeahead__list .typeahead__item.active a {
+    background: #f2f4f8;
+}
+
+.typeahead__container .typeahead__result .typeahead__list .typeahead__item:hover a {
+    background: #eef0f4;
+}
+
+.typeahead__container .typeahead__result .typeahead__list .typeahead__item strong {
+    font-weight: 600;
+}
+
+.typeahead__container.result .typeahead__result {
+    display: block;
+}
+
+.typeahead__container.result input.form-control {
+    border-right-color: transparent;
+}

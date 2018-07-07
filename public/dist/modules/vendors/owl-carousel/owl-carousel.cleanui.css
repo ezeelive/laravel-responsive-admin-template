@@ -1,0 +1,18 @@
+/*  OWL CAROUSEL */
+.owl-demo .item {
+    height: 140px;
+    background: #acb7bf;
+    padding: 1rem;
+}
+
+.owl-demo .item * {
+    color: #ffffff;
+}
+
+.owl-demo-img .owl-item img {
+    height: 132px;
+}
+
+.owl-demo-video .item-video {
+    height: 300px;
+}

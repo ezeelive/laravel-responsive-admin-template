@@ -1,0 +1,12 @@
+/* CARDS */
+.card, .card-header, .list-group-item, .card-footer {
+    border-color: #e4e9f0;
+}
+
+.card-header, .card-footer {
+    background: #ffffff;
+}
+
+.card {
+    margin-bottom: 1.35rem;
+}

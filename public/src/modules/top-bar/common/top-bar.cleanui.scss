@@ -1,0 +1,221 @@
+// Import mixins from "core" module
+@import '../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  STYLES FOR "TOP-BAR" MODULE */
+
+// space for top bar block
+body {
+    padding-top: rem(65);
+}
+
+.cat {
+
+    // root styles
+    &__top-bar {
+        position: fixed;
+        z-index: 990;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: rem(65);
+        background: $white;
+        border-bottom: 1px solid $gray-border;
+        padding-right: rem(20);
+        color: $text;
+
+        // logo styles
+        &__logo {
+            width: rem(200);
+            height: rem(65);
+            display: inline-block;
+            padding: rem(14) rem(18);
+            margin-right: rem(20);
+            img {
+                max-height: rem(35);
+            }
+
+            @media (max-width: $md-max-width) {
+                width: rem(150);
+            }
+        }
+
+        // avatar styles
+        &__avatar {
+            width: rem(35);
+            height: rem(35);
+            background-color: $gray-lighten;
+            border-color: $gray;
+            display: inline-block;
+            overflow: hidden;
+            -webkit-border-radius: 500px;
+            border-radius: 500px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__avatar-dropdown {
+
+            // next styles affects on "vendors#bootstrap" module
+            // dropdown arrow fix
+            .dropdown-toggle {
+                padding-right: rem(18);
+                display: inline-block;
+                &:after {
+                    position: absolute;
+                    top: 50%;
+                    margin-top: rem(-1);
+                    right: rem(0);
+                }
+            }
+        }
+
+        // left block
+        &__left {
+            float: left;
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            // margins of items inside left block
+            .cat__top-bar__item {
+                margin-right: rem(30);
+            }
+        }
+
+        // right block
+        &__right {
+            float: right;
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            // margins of items inside right block
+            .cat__top-bar__item {
+                margin-left: rem(30);
+            }
+        }
+
+        // item styles
+        &__item {
+            padding-top: rem(5);
+        }
+
+        // mini chart
+        &__mini-chart {
+            height: rem(30);
+            line-height: rem(30);
+
+            &__inner {
+                height: 80%;
+                display: inline-flex;
+                vertical-align: sub;
+                margin: 0 rem(5);
+                i {
+                    display: inline-block;
+                    float: left;
+                    width: 4px;
+                    background: $primary;
+                    margin-right: 1px;
+                    align-self: flex-end;
+                }
+            }
+        }
+
+        // menu button
+        &__menu-button {
+            cursor: pointer;
+            height: rem(30);
+            padding-top: rem(4);
+            color: $gray;
+            font-size: rem(16);
+            @include transition-color();
+            &:hover {
+                color: $gray-darken;
+            }
+        }
+
+        // search box
+        &__search {
+            border-bottom: 1px solid $gray-border;
+            margin-top: rem(4);
+            input {
+                border: none;
+                position: relative;
+                top: -1px;
+                opacity: .6;
+                width: rem(160);
+                &:focus {
+                    opacity: 1;
+                }
+            }
+            i {
+                cursor: pointer;
+                color: $gray;
+                margin-right: rem(5);
+                &:hover {
+                    color: $text-darken;
+                }
+            }
+        }
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  NOTIFICATION BLOCK (TOP MENU) */
+
+.cat__top-bar__activity {
+    width: rem(290);
+    margin: rem(-7) 0;
+    background: $white;
+    &__item {
+        border-bottom: 1px solid $gray-border;
+        padding: rem(10) 0;
+        position: relative;
+        &:last-child {
+            border-bottom: 0;
+        }
+        &:hover {
+            background: $gray-lighten;
+
+            .cat__top-bar__activity__icon {
+                background: $text-lighten;
+                color: $white;
+                border-color: $text-lighten;
+            }
+        }
+    }
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding-top: rem(12);
+        font-size: rem(16);
+        width: rem(40);
+        text-align: center;
+        color: $gray;
+        background: $gray-lighten-more;
+        border-bottom: 1px solid $gray-lighten;
+    }
+    &__inner {
+        margin-left: rem(50);
+        padding-right: rem(15);
+        label {
+            font-size: rem(12);
+        }
+    }
+    &__descr {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &__title {
+        > span {
+            font-size: rem(13);
+            color: $gray;
+        }
+    }
+}

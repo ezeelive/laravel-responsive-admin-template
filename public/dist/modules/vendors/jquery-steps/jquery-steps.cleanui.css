@@ -1,0 +1,161 @@
+/*  JQUERY STEPS */
+.cat__wizard__steps__icon, .cat__wizard .number {
+    border: 3px solid #0190fe;
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+    width: 3.21rem;
+    height: 3.21rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.64rem;
+    color: #0190fe;
+    font-size: 1.71rem;
+    background: #ffffff;
+}
+
+.cat__wizard__steps__title {
+    display: block;
+}
+
+.cat__wizard > .content {
+    min-height: 10.71rem;
+    margin: 0 0 1.07rem;
+    background: transparent;
+}
+
+.cat__wizard > .content > .body {
+    background: transparent;
+    padding: 1.78rem 0;
+}
+
+.cat__wizard .steps ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.cat__wizard .steps ul li {
+    -webkit-box-flex: 200;
+    -webkit-flex-grow: 200;
+        -ms-flex-positive: 200;
+            flex-grow: 200;
+    margin-bottom: 0.71rem;
+    float: none;
+    width: auto;
+    position: relative;
+}
+
+.cat__wizard .steps ul li a {
+    background: transparent !important;
+    margin: 0 !important;
+    text-align: center;
+    color: #0e0b20 !important;
+    line-height: 2.14rem;
+    position: relative;
+    z-index: 2;
+}
+
+.cat__wizard .steps ul li a .number {
+    display: none;
+}
+
+.cat__wizard .steps ul li:before, .cat__wizard .steps ul li:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 50%;
+    top: 2.57rem;
+    right: 0;
+    height: 0.21rem;
+    background: #0190fe;
+    z-index: 1;
+}
+
+.cat__wizard .steps ul li:after {
+    right: auto;
+    left: 0;
+}
+
+.cat__wizard .steps ul li:first-child:after {
+    display: none;
+}
+
+.cat__wizard .steps ul li:last-child:before {
+    display: none;
+}
+
+.cat__wizard .steps ul li.disabled:before, .cat__wizard .steps ul li.disabled:after {
+    background: #b8beca;
+}
+
+.cat__wizard .steps ul li.disabled .cat__wizard__steps__icon, .cat__wizard .steps ul li.disabled .number {
+    border-color: #b8beca;
+    background: #b8beca;
+    color: #ffffff;
+}
+
+.cat__wizard .steps ul li.disabled a {
+    color: #393749 !important;
+}
+
+@media (max-width: 991px) {
+    .cat__wizard .steps ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+.cat__wizard .actions {
+    text-align: center;
+}
+
+.cat__wizard .actions li {
+    margin-left: 0 !important;
+}
+
+.cat__wizard .actions li a {
+    background-color: #acb7bf;
+    border-color: #acb7bf;
+    min-width: 8.57rem;
+    text-align: center;
+}
+
+.cat__wizard .actions li a:hover, .cat__wizard .actions li a:active {
+    background-color: #bdc6cc;
+    border-color: #bdc6cc;
+}
+
+.cat__wizard .actions li.disabled a {
+    background-color: #acb7bf !important;
+    border-color: #acb7bf !important;
+    color: #ffffff !important;
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.cat__wizard__numbers .number {
+    padding-left: 3px;
+}
+
+.cat__wizard__numbers .steps ul li a .number {
+    display: inline-block !important;
+    line-height: 3rem;
+}
+
+.cat__wizard .content > .body input {
+    border-color: #e4e9f0;
+}
+
+.cat__wizard .content > .body input:focus {
+    border-color: #0190fe;
+}

@@ -1,0 +1,58 @@
+/* COLLAPSE */
+.accordion .card {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    margin-bottom: 0px;
+    border-bottom-width: 0px;
+}
+
+.accordion .card:first-child {
+    -webkit-border-radius: 5px 5px 0 0;
+            border-radius: 5px 5px 0 0;
+}
+
+.accordion .card:last-child {
+    -webkit-border-radius: 0 0 5px 5px;
+            border-radius: 0 0 5px 5px;
+    border-bottom-width: 1px;
+}
+
+.accordion .card .card-header {
+    cursor: pointer;
+}
+
+.accordion .card .card-header .card-title {
+    margin-bottom: 0;
+}
+
+.accordion .card .card-header.collapsed {
+    border: none;
+}
+
+.accordion.accordion-margin-bottom .card {
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    margin-bottom: 1.07rem;
+    border-bottom-width: 1px;
+}
+
+.accordion .accordion-indicator {
+    padding-top: 1px;
+    color: #b8beca;
+}
+
+.accordion .accordion-indicator .plus {
+    display: none;
+}
+
+.accordion .accordion-indicator .minus {
+    display: inline;
+}
+
+.accordion .collapsed .accordion-indicator .plus {
+    display: inline;
+}
+
+.accordion .collapsed .accordion-indicator .minus {
+    display: none;
+}

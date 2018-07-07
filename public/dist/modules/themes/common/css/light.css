@@ -1,0 +1,73 @@
+/* THEMES: LIGHT */
+body.cat__theme--light .cat__menu-left {
+    background: #fff;
+    border-right: 1px solid #e4e9f0;
+}
+
+body.cat__theme--light .cat__menu-left__item > a {
+    color: #74708d;
+}
+
+body.cat__theme--light .cat__menu-left__item--active > a,
+body.cat__theme--light .cat__menu-left__item:hover > a,
+body.cat__theme--light .cat__menu-left__item:active > a,
+body.cat__theme--light .cat__menu-left__item:focus > a {
+    background: #e4e9f0;
+    color: #454354;
+}
+
+body.cat__theme--light .cat__menu-left__submenu--toggled.cat__menu-left__item {
+    background: #e4e9f0;
+    color: #74708d;
+}
+
+body.cat__theme--light .cat__menu-left__submenu > .cat__menu-left__list {
+    background: #f4f6f9;
+}
+
+body.cat__theme--light .cat__menu-left__icon {
+    color: #c7c5d1;
+}
+
+body.cat__theme--light .cat__menu-left__item--active > a > .cat__menu-left__icon,
+body.cat__theme--light .cat__menu-left__item:hover > a > .cat__menu-left__icon,
+body.cat__theme--light .cat__menu-left__item:active > a > .cat__menu-left__icon,
+body.cat__theme--light .cat__menu-left__item:focus > a > .cat__menu-left__icon {
+    color: #8f8ca4;
+}
+
+body.cat__theme--light .cat__menu-left__submenu.cat__menu-left__item > a:after {
+    border-color: transparent #c7c5d1 transparent transparent;
+}
+
+body.cat__theme--light .cat__menu-left__divider {
+    background: #e4e9f0;
+}
+
+body.cat__theme--light .cat__menu-left .jspScrollable .jspDrag:after {
+    background: #e2e1e8 !important;
+}
+
+@media (min-width: 768px) {
+    body.cat__theme--light.cat__config--vertical.cat__config--compact .cat__menu-left__item > a:before {
+        background: #e4e9f0;
+    }
+}
+
+body.cat__theme--light.cat__config--horizontal .cat__menu-left {
+    border-right: none;
+    border-bottom: 1px solid #e4e9f0;
+}
+
+@media (min-width: 768px) {
+    body.cat__theme--light.cat__config--horizontal .cat__menu-left__list--root > li.cat__menu-left__item > a {
+        border-left-color: #e4e9f0;
+    }
+    body.cat__theme--light.cat__config--horizontal .cat__menu-left__list--root > li.cat__menu-left__item:hover > a {
+        background: #e4e9f0;
+        color: #454354;
+    }
+    body.cat__theme--light.cat__config--horizontal .cat__menu-left__list--root > li.cat__menu-left__item:hover > a > .cat__menu-left__icon {
+        color: #8f8ca4;
+    }
+}

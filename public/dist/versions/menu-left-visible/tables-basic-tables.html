@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Clean UI Admin Template Modular</title>
+    <link href="../../modules/core/common/img/favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <!-- VENDORS -->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/ladda/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/summernote/dist/summernote.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/ionrangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/datatables/media/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/c3/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/jquery-steps/demo/css/jquery.steps.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/dropify/dist/css/dropify.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlaudioplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlvideoplayer/src/player.css">
+    <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../vendors/popper.js/dist/umd/popper.js"></script>
+    <script src="../../vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="../../vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="../../vendors/spin.js/spin.js"></script>
+    <script src="../../vendors/ladda/dist/ladda.min.js"></script>
+    <script src="../../vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../../vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="../../vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+    <script src="../../vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+    <script src="../../vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="../../vendors/autosize/dist/autosize.min.js"></script>
+    <script src="../../vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+    <script src="../../vendors/moment/min/moment.min.js"></script>
+    <script src="../../vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="../../vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+    <script src="../../vendors/summernote/dist/summernote.min.js"></script>
+    <script src="../../vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../../vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="../../vendors/nestable/jquery.nestable.js"></script>
+    <script src="../../vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../../vendors/datatables/media/js/dataTables.bootstrap4.js"></script>
+    <script src="../../vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+    <script src="../../vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="../../vendors/editable-table/mindmup-editabletable.js"></script>
+    <script src="../../vendors/d3/d3.min.js"></script>
+    <script src="../../vendors/c3/c3.min.js"></script>
+    <script src="../../vendors/chartist/dist/chartist.min.js"></script>
+    <script src="../../vendors/peity/jquery.peity.min.js"></script>
+    <script src="../../vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../vendors/jquery-countTo/jquery.countTo.js"></script>
+    <script src="../../vendors/nprogress/nprogress.js"></script>
+    <script src="../../vendors/jquery-steps/build/jquery.steps.min.js"></script>
+    <script src="../../vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="../../vendors/dropify/dist/js/dropify.min.js"></script>
+    <script src="../../vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+    <script src="../../vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
+
+    <!-- CLEAN UI ADMIN TEMPLATE MODULES-->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="../../modules/core/common/core.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/vendors/common/vendors.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/layouts/common/layouts-pack.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/themes/common/themes.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/menu-left/common/menu-left.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/menu-right/common/menu-right.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/top-bar/common/top-bar.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/footer/common/footer.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/pages/common/pages.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/ecommerce/common/ecommerce.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/apps/common/apps.cleanui.css">
+    <script src="../../modules/menu-left/common/menu-left.cleanui.js"></script>
+    <script src="../../modules/menu-right/common/menu-right.cleanui.js"></script>
+</head>
+<body class="cat__config--vertical cat__menu-left--colorful cat__menu-left--visible">
+<div class="cat__menu-right">
+    <div class="cat__menu-right__inner">
+        <div class="cat__menu-right__header">
+            <span class="fa fa-times pull-right cat__menu-right__action--menu-toggle"><!-- --></span>
+            Theme Settings
+        </div>
+        <div class="cat__menu-right__content">
+            <div class="cat__menu-right__descr">
+                This module "block-menu-right" gives possibility to construct custom blocks with any widgets, components and elements inside, like this theme settings
+            </div>
+            <div class="cat__menu-right__label">
+                Theme Style
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="" autocomplete="off"> Dark
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--light" autocomplete="off"> Light
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--green" autocomplete="off"> Green
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--blue" autocomplete="off"> Blue
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--red" autocomplete="off"> Red
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--orange" autocomplete="off"> Orange
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Boxed Layout
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-boxed" value="cat__config--boxed" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-boxed" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Compact Menu
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-boxed" value="cat__config--compact" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-boxed" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Fixed Top Bar
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-topbar" value="" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-topbar" value="cat__config--unfixed" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Super Clean Mode
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-superclean" value="cat__config--superclean" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-superclean" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Colorful Menu
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-colorful" value="cat__menu-left--colorful" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-colorful" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Menu Shadow
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-shadow" value="cat__config--shadow" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-shadow" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Squared Corners
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-corners" value="cat__config--squared-corners" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-corners" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="cat__menu-left">
+    <div class="cat__menu-left__lock cat__menu-left__action--menu-toggle">
+        <div class="cat__menu-left__pin-button">
+            <div><!-- --></div>
+        </div>
+    </div>
+    <div class="cat__menu-left__logo">
+        <a href="dashboards-alpha.html">
+            <img src="../../modules/dummy-assets/common/img/logo-inverse.png" />
+        </a>
+    </div>
+    <div class="cat__menu-left__inner">
+        <ul class="cat__menu-left__list cat__menu-left__list--root">
+            <li class="cat__menu-left__item">
+                <a href="javascript: void(0);" class="cat__menu-right__action--menu-toggle">
+                    <span class="cat__menu-left__icon icmn-cog cat__core__spin-delayed--pseudo-selector"></span>
+                    Theme Settings
+                </a>
+            <li class="cat__menu-left__item cat__menu-left__item--active">
+                <a href="documentation-index.html">
+				    <span class="cat__menu-left__icon icmn-books"></span>
+                    Documentation
+                </a>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item">
+                <a href="dashboards-alpha.html">
+                    <span class="cat__menu-left__icon icmn-home"></span>
+                    <span class="badge badge-primary pull-right">New</span>
+                    Dashboard Alpha
+                </a>
+            </li>
+            <li class="cat__menu-left__item">
+                <a href="dashboards-beta.html">
+                    <span class="cat__menu-left__icon icmn-home"></span>
+                    Dashboard Beta
+                </a>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-file-text"></span>
+                    Default Pages
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="pages-login-alpha.html">
+                            <span class="cat__menu-left__icon">LA</span>
+                            Login Alpha
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="pages-login-beta.html">
+                            <span class="cat__menu-left__icon">LB</span>
+                            Login Beta
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="pages-register.html">
+                            <span class="cat__menu-left__icon">R</span>
+                            Register
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="pages-lockscreen.html">
+                            <span class="cat__menu-left__icon">LS</span>
+                            Lockscreen
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="pages-pricing-tables.html">
+                            <span class="cat__menu-left__icon">PT</span>
+                            Pricing Tables
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="pages-invoice.html">
+                            <span class="cat__menu-left__icon">I</span>
+                            Invoice
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="pages-page-404.html">
+                            <span class="cat__menu-left__icon">P4</span>
+                            Page 404
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="pages-page-500.html">
+                            <span class="cat__menu-left__icon">P5</span>
+                            Page 500
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-download"></span>
+                    Ecommerce
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="ecommerce-dashboard.html">
+                            <span class="cat__menu-left__icon">DB</span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="ecommerce-products-catalog.html">
+                            <span class="cat__menu-left__icon">PC</span>
+                            Products Catalog
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="ecommerce-product-details.html">
+                            <span class="cat__menu-left__icon">PD</span>
+                            Product Details
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="ecommerce-product-edit.html">
+                            <span class="cat__menu-left__icon">PE</span>
+                            Product Edit
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="ecommerce-products-list.html">
+                            <span class="cat__menu-left__icon">PL</span>
+                            Products List
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="ecommerce-orders.html">
+                            <span class="cat__menu-left__icon">O</span>
+                            Orders
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="ecommerce-cart-checkout.html">
+                            <span class="cat__menu-left__icon">CC</span>
+                            Cart / Checkout
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-list"></span>
+                    Forms
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="forms-basic-form-elements.html">
+                            <span class="cat__menu-left__icon">BF</span>
+                            Basic Form Elements
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-buttons.html">
+                            <span class="cat__menu-left__icon">B</span>
+                            Buttons
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-dropdowns.html">
+                            <span class="cat__menu-left__icon">D</span>
+                            Dropdowns
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-selectboxes.html">
+                            <span class="cat__menu-left__icon">SB</span>
+                            Selectboxes
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-checkboxes-radio.html">
+                            <span class="cat__menu-left__icon">CR</span>
+                            Checkboxes / Radio
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-form-wizard.html">
+                            <span class="cat__menu-left__icon">FW</span>
+                            Form Wizard
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-form-validation.html">
+                            <span class="cat__menu-left__icon">FV</span>
+                            Form Validation
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-autocomplete.html">
+                            <span class="cat__menu-left__icon">AC</span>
+                            Autocomplete
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-input-mask.html">
+                            <span class="cat__menu-left__icon">IM</span>
+                            Input Mask
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-file-uploads.html">
+                            <span class="cat__menu-left__icon">FU</span>
+                            File Uploads
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="forms-extras.html">
+                            <span class="cat__menu-left__icon">E</span>
+                            Extras
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-loop"></span>
+                    Components
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="components-date-picker.html">
+                            <span class="cat__menu-left__icon">DP</span>
+                            Date Picker
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-calendar.html">
+                            <span class="cat__menu-left__icon">CL</span>
+                            Calendar
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-carousel.html">
+                            <span class="cat__menu-left__icon">CR</span>
+                            Carousel
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-media-players.html">
+                            <span class="cat__menu-left__icon">MP</span>
+                            Media Players
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-slider.html">
+                            <span class="cat__menu-left__icon">SL</span>
+                            Slider
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-modal.html">
+                            <span class="cat__menu-left__icon">M</span>
+                            Modal
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-tooltips-popovers.html">
+                            <span class="cat__menu-left__icon">TP</span>
+                            Tooltips & Popovers
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-notifications-alerts.html">
+                            <span class="cat__menu-left__icon">NA</span>
+                            Notifications & Alerts
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-loading-progress.html">
+                            <span class="cat__menu-left__icon">LP</span>
+                            Loading Progress
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-progress-bars.html">
+                            <span class="cat__menu-left__icon">PB</span>
+                            Progress Bars
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-badges-labels.html">
+                            <span class="cat__menu-left__icon">BL</span>
+                            Badges & Labels
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-steps.html">
+                            <span class="cat__menu-left__icon">S</span>
+                            Steps
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-breadcrumbs.html">
+                            <span class="cat__menu-left__icon">B</span>
+                            Breadcrumbs
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-pagination.html">
+                            <span class="cat__menu-left__icon">P</span>
+                            Pagination
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-collapse.html">
+                            <span class="cat__menu-left__icon">C</span>
+                            Collapse
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-tabs.html">
+                            <span class="cat__menu-left__icon">T</span>
+                            Tabs
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-text-editor.html">
+                            <span class="cat__menu-left__icon">TE</span>
+                            Text Editor
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="components-nestable.html">
+                            <span class="cat__menu-left__icon">N</span>
+                            Nestable
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-table"></span>
+                    Tables
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="tables-basic-tables.html">
+                            <span class="cat__menu-left__icon">BT</span>
+                            Basic Tables
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="tables-datatables.html">
+                            <span class="cat__menu-left__icon">DT</span>
+                            DataTables
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="tables-editable-tables.html">
+                            <span class="cat__menu-left__icon">ET</span>
+                            Editable Tables
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-stats-bars"></span>
+                    Charts
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li  class="cat__menu-left__item">
+                        <a href="charts-chartistjs.html">
+                            <span class="cat__menu-left__icon">CT</span>
+                            Chartist.js
+                        </a>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="charts-chartjs.html">
+                            <span class="cat__menu-left__icon">CR</span>
+                            Chart.js
+                        </a>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="charts-c3.html">
+                            <span class="cat__menu-left__icon">C3</span>
+                            C3
+                        </a>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="charts-peity.html">
+                            <span class="cat__menu-left__icon">PT</span>
+                            Peity
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li  class="cat__menu-left__item">
+                <a href="components-mail-templates.html">
+                    <span class="cat__menu-left__icon icmn-envelop"></span>
+                    Mail Templates
+                </a>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li  class="cat__menu-left__item">
+                <a href="apps-profile.html">
+                    <span class="cat__menu-left__icon icmn-profile"></span>
+                    Profile
+                </a>
+            </li>
+            <li  class="cat__menu-left__item">
+                <a href="apps-messaging.html">
+                    <span class="cat__menu-left__icon icmn-bubbles4"></span>
+                    <span class="badge badge-danger pull-right">768</span>
+                    Messaging
+                </a>
+            </li>
+            <li  class="cat__menu-left__item">
+                <a href="apps-mail.html">
+                    <span class="cat__menu-left__icon icmn-envelop"></span>
+                    <span class="badge badge-success pull-right">84</span>
+                    Mail
+                </a>
+            </li>
+            <li  class="cat__menu-left__item">
+                <a href="apps-calendar.html">
+                    <span class="cat__menu-left__icon icmn-calendar"></span>
+                    Calendar
+                </a>
+            </li>
+            <li  class="cat__menu-left__item">
+                <a href="apps-gallery.html">
+                    <span class="cat__menu-left__icon icmn-images"></span>
+                    Gallery
+                </a>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-checkbox-unchecked"></span>
+                    Layout
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li  class="cat__menu-left__item">
+                        <a href="layout-grid.html">
+                            <span class="cat__menu-left__icon">G</span>
+                            Grid
+                        </a>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="layout-cards.html">
+                            <span class="cat__menu-left__icon">PC</span>
+                            Cards / Panels
+                        </a>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="layout-sidebars.html">
+                            <span class="cat__menu-left__icon">SB</span>
+                            Sidebars
+                        </a>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="layout-utilities.html">
+                            <span class="cat__menu-left__icon">U</span>
+                            Utilities
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-star-full"></span>
+                    Icons
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li  class="cat__menu-left__item">
+                        <a href="icons-fontawesome.html">
+                            <span class="cat__menu-left__icon">FA</span>
+                            FontAwesome
+                        </a>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="icons-linear-icons-free.html">
+                            <span class="cat__menu-left__icon">LI</span>
+                            Linearicons Free
+                        </a>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="icons-icomoon-free.html">
+                            <span class="cat__menu-left__icon">IC</span>
+                            Icomoon Free
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li  class="cat__menu-left__item">
+                <a href="layout-typography.html">
+                    <span class="cat__menu-left__icon icmn-font-size"></span>
+                    Typography
+                </a>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li  class="cat__menu-left__item cat__menu-left__item--disabled">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon">D</span>
+                    Disabled Item
+                </a>
+            </li>
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon">IN</span>
+                    Infinity Nested
+                </a>
+                <!-- level 1 -->
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item cat__menu-left__submenu">
+                        <a href="javascript: void(0);">
+                            Level 1
+                        </a>
+                        <!-- level 2 -->
+                        <ul class="cat__menu-left__list">
+                            <li class="cat__menu-left__item cat__menu-left__submenu">
+                                <a href="javascript: void(0);">
+                                    Level 1.2
+                                </a>
+                                <!-- level 3 -->
+                                <ul class="cat__menu-left__list">
+                                    <li  class="cat__menu-left__item">
+                                        <a href="javascript: void(0);">
+                                            Level 1.2.3
+                                        </a>
+                                    </li>
+                                    <li class="cat__menu-left__item cat__menu-left__submenu">
+                                        <a href="javascript: void(0);">
+                                            Level 1.2.3
+                                        </a>
+                                        <!-- level 4 -->
+                                        <ul class="cat__menu-left__list">
+                                            <li  class="cat__menu-left__item">
+                                                <a href="javascript: void(0);">
+                                                    Level 1.2.3.4
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li  class="cat__menu-left__item">
+                                <a href="javascript: void(0);">
+                                    Level 1.2
+                                </a>
+                            </li>
+                            <li  class="cat__menu-left__item">
+                                <a href="javascript: void(0);">
+                                    Level 1.2
+                                </a>
+                            </li>
+                            <li  class="cat__menu-left__item">
+                                <a href="javascript: void(0);">
+                                    Level 1.2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="javascript: void(0);">
+                            Level 1
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item">
+                <a href="javascript: void(0);">
+                    <span class="cat__core__donut cat__core__donut--success"></span>
+                    Jupiter
+                </a>
+            </li>
+            <li class="cat__menu-left__item">
+                <a href="javascript: void(0);">
+                    <span class="cat__core__donut cat__core__donut--primary"></span>
+                    Earth
+                </a>
+            </li>
+            <li class="cat__menu-left__item">
+                <a href="javascript: void(0);">
+                    <span class="cat__core__donut cat__core__donut--danger"></span>
+                    Mercury
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="cat__top-bar">
+    <!-- left aligned items -->
+    <div class="cat__top-bar__left">
+        <div class="cat__top-bar__logo">
+            <a href="dashboards-alpha.html">
+                <img src="../../modules/dummy-assets/common/img/logo.png" />
+            </a>
+        </div>
+        <div class="cat__top-bar__item hidden-sm-down">
+            <div class="dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="icmn-folder-open mr-2"></i>
+                    <span class="hidden-lg-down"><strong>Issues History</strong></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)">Current search</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Search for issues</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">Opened</div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-checkmark"></i> CLNUI-253 Project implemen...</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-checkmark"></i> CLNUI-234 Active history iss...</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-clock"></i> CLNUI-424 Ionicons intergrat...</a>
+                    <a class="dropdown-item" href="javascript:void(0)">More...</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">Filters</div>
+                    <a class="dropdown-item" href="javascript:void(0)">My open issues</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Reported by me</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)">Import issues from CSV</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog"></i> Settings</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cat__top-bar__item hidden-sm-down">
+            <div class="dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="icmn-database mr-2"></i>
+                    <span class="hidden-lg-down"><strong>Dashboards</strong></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="" role="menu">
+                    <div class="dropdown-header">Active</div>
+                    <a class="dropdown-item" href="javascript:void(0)">Project Management</a>
+                    <a class="dropdown-item" href="javascript:void(0)">User Inetrface Development</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Documentation</a>
+                    <div class="dropdown-header">Inactive</div>
+                    <a class="dropdown-item" href="javascript:void(0)">Marketing</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog"></i> Settings</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cat__top-bar__item hidden-lg-down">
+            <div class="cat__top-bar__search">
+                <i class="icmn-search"><!-- --></i>
+                <input type="text" placeholder="Type to search..." />
+            </div>
+        </div>
+    </div>
+    <!-- right aligned items -->
+    <div class="cat__top-bar__right">
+        <div class="cat__top-bar__item hidden-sm-down">
+            <a href="https://themeforest.net/item/clean-ui-admin-template-modular-trendy-design-modules-market-bem-angular-2-visual-builder/19597589?s_rank=4&ref=mediatec_software" target="_blank" onclick="yaCounter43604639.reachGoal('buy_sho_hea');" class="btn btn-sm btn-default btn-rounded">Buy Now <strike>20</strike> 25$</a>
+        </div>
+        <div class="cat__top-bar__item hidden-xxl-down hidden-sm-down">
+            <div class="cat__top-bar__mini-chart">
+                Server Load:
+                <div class="cat__top-bar__mini-chart__inner">
+                    <i style="height: 30%;"></i>
+                    <i style="height: 78%;"></i>
+                    <i style="height: 10%;"></i>
+                    <i style="height: 46%;"></i>
+                    <i style="height: 26%;"></i>
+                    <i style="height: 29%;"></i>
+                    <i style="height: 50%;"></i>
+                    <i style="height: 89%;"></i>
+                    <i style="height: 30%;"></i>
+                </div>
+                20%
+            </div>
+        </div>
+        <div class="cat__top-bar__item hidden-sm-down">
+            <div class="dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="menu-notification-icon icmn-home"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+
+                    <div class="cat__top-bar__activity">
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-star-full"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">now</span>
+                                    <a href="javascript: void(0);">Update Status: <span class="badge badge-danger">New</span></a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    Failed to get available update data. To ensure the proper functioning of your application, update now.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-stack"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">24 min ago</span>
+                                    <a href="javascript: void(0);">Income: <span class="badge badge-default">$299.00</span></a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    Failed to get available update data. To ensure the proper functioning of your application, update now.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-list"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">30 min ago</span>
+                                    <a href="javascript: void(0);">Inbox Message</a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    From: <a href="javascript: void(0);">David Bowie</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-home"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">now</span>
+                                    <a href="javascript: void(0);">Update Status: <span class="badge badge-primary">New</span></a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    Failed to get available update data. To ensure the proper functioning of your application, update now.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-loop"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">24 min ago</span>
+                                    <a href="javascript: void(0);">Income: <span class="badge badge-warning">$299.00</span></a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    Failed to get available update data. To ensure the proper functioning of your application, update now.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-cog cat__core__spin-delayed--pseudo-selector"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">30 min ago</span>
+                                    <a href="javascript: void(0);">Inbox Message</a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    From: <a href="javascript: void(0);">David Bowie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+        <div class="cat__top-bar__item">
+            <div class="dropdown cat__top-bar__avatar-dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="cat__top-bar__avatar" href="javascript:void(0);">
+                        <img src="../../modules/dummy-assets/common/img/avatars/1.jpg" />
+                    </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">Home</div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> System Dashboard</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> User Boards</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Issue Navigator (35 New)</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i> Logout</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cat__top-bar__item">
+            <div class="cat__top-bar__menu-button cat__menu-right__action--menu-toggle">
+                <i class="fa fa-bars"><!-- --></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cat__content">
+<!-- START: tables/basic-tables -->
+<section class="card">
+    <div class="card-header">
+        <span class="cat__core__title">
+            <strong>Basic Tables</strong>
+            <a href="http://v4-alpha.getbootstrap.com/content/tables/" target="_blank" class="btn btn-sm btn-primary ml-2">Official Documentation <i class="icmn-link ml-1"><!-- --></i></a>
+        </span>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Default</strong></h5>
+                <p class="text-muted">Element: read <a href="http://v4-alpha.getbootstrap.com/content/tables/" target="_blank">official documentation<small><i class="icmn-link ml-1"><!-- --></i></small></a></p>
+                <div class="mb-5">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Username</th>
+                            <th width="200">Levels</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">
+                                <input type="checkbox" />
+                            </th>
+                            <td><a href="javascript: void(0);" class="cat__core__link--underlined cat__core__link--blue" data-toggle="tooltip" data-placement="right" title="" data-original-title="User #1">Mark</a></td>
+                            <td>@mdo</td>
+                            <td>
+                                <div class="cat__core__steps-inline d-block">
+                                    <a href="javascript: void(0);" class="cat__core__step cat__core__step--success">1</a>
+                                    <a href="javascript: void(0);" class="cat__core__step cat__core__step--success">2</a>
+                                    <a href="javascript: void(0);" class="cat__core__step cat__core__step--success">3</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <th scope="row">
+                                <input type="checkbox" />
+                            </th>
+                            <td><a href="javascript: void(0);" class="cat__core__link--underlined cat__core__link--blue" data-toggle="tooltip" data-placement="right" title="" data-original-title="User #2">Jacob</a></td>
+                            <td>@fat</td>
+                            <td>
+                                <div class="cat__core__steps-inline d-block">
+                                    <a href="javascript: void(0);" class="cat__core__step cat__core__step--success">1</a>
+                                    <a href="javascript: void(0);" class="cat__core__step cat__core__step--success">2</a>
+                                    <a href="javascript: void(0);" class="cat__core__step">3</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <input type="checkbox" />
+                            </th>
+                            <td><a href="javascript: void(0);" class="cat__core__link--underlined cat__core__link--blue" data-toggle="tooltip" data-placement="right" title="" data-original-title="User #3">Larry</a></td>
+                            <td>@twitter</td>
+                            <td>
+                                <div class="cat__core__steps-inline d-block">
+                                    <a href="javascript: void(0);" class="cat__core__step cat__core__step--primary">1</a>
+                                    <a href="javascript: void(0);" class="cat__core__step">2</a>
+                                    <a href="javascript: void(0);" class="cat__core__step">3</a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Inverse</strong></h5>
+                <p class="text-muted">Modifier: <code>.table-inverse</code></p>
+                <div class="mb-5">
+                    <table class="table table-inverse">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Default Thead</strong></h5>
+                <p class="text-muted">Modifier: <code>.thead-default</code></p>
+                <div class="mb-5">
+                    <table class="table">
+                        <thead class="thead-default">
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Username</th>
+                            <th width="200">Progress</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>@mdo</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>@fat</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>@twitter</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Inverse Thead</strong></h5>
+                <p class="text-muted">Modifier: <code>.thead-inverse</code></p>
+                <div class="mb-5">
+                    <table class="table">
+                        <thead class="thead-inverse">
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Striped</strong></h5>
+                <p class="text-muted">Modifier: <code>.table-striped</code></p>
+                <div class="mb-5">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th width="200">Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <small class="text-uppercase text-default">Checked by:</small>
+                                <br />
+                                Mark
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Available:</small>
+                                <br />
+                                Otto
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Last known:</small>
+                                <br />
+                                @mdo
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>
+                                <small class="text-uppercase text-default">Checked by:</small>
+                                <br />
+                                Jacob
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Available:</small>
+                                <br />
+                                Thornton
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Last known:</small>
+                                <br />
+                                @fat
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>
+                                <small class="text-uppercase text-default">Checked by:</small>
+                                <br />
+                                Larry
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Available:</small>
+                                <br />
+                                the Bird
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Last known:</small>
+                                <br />
+                                @twitter
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Hover</strong></h5>
+                <p class="text-muted">Modifier: <code>.table-hover</code></p>
+                <div class="mb-5">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <small class="text-uppercase text-default">Checked by:</small>
+                                <br />
+                                Mark
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Available:</small>
+                                <br />
+                                Otto
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Last known:</small>
+                                <br />
+                                @mdo
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>
+                                <small class="text-uppercase text-default">Checked by:</small>
+                                <br />
+                                Jacob
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Available:</small>
+                                <br />
+                                Thornton
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Last known:</small>
+                                <br />
+                                @fat
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>
+                                <small class="text-uppercase text-default">Checked by:</small>
+                                <br />
+                                Larry
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Available:</small>
+                                <br />
+                                the Bird
+                            </td>
+                            <td>
+                                <small class="text-uppercase text-default">Last known:</small>
+                                <br />
+                                @twitter
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h5 class="text-black"><strong>Responsive Table</strong></h5>
+                <p class="text-muted">Outer element: <code>.table-responsive</code></p>
+                <div class="table-responsive mb-5">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Damon</td>
+                                <td>5516 Adolfo Green</td>
+                                <td>Littelhaven</td>
+                                <td>85</td>
+                                <td>2014/06/13</td>
+                                <td>$553,536</td>
+                            </tr>
+                            <tr>
+                                <td>Torrey</td>
+                                <td>1995 Richie Neck</td>
+                                <td>West Sedrickstad</td>
+                                <td>77</td>
+                                <td>2014/09/12</td>
+                                <td>$243,577</td>
+                            </tr>
+                            <tr>
+                                <td>Elliott_Becker</td>
+                                <td>8417 Orion Parkway</td>
+                                <td>Streichside</td>
+                                <td>83</td>
+                                <td>2014/08/28</td>
+                                <td>$447,592</td>
+                            </tr>
+                            <tr>
+                                <td>Yasmine</td>
+                                <td>67284 Kreiger Freeway</td>
+                                <td>Stoltenbergside</td>
+                                <td>8</td>
+                                <td>2014/12/12</td>
+                                <td>$358,369</td>
+                            </tr>
+                            <tr>
+                                <td>Ada.Hoppe</td>
+                                <td>69842 Peyton Viaduct</td>
+                                <td>South Geovannyburgh</td>
+                                <td>89</td>
+                                <td>2013/05/13</td>
+                                <td>$211,76</td>
+                            </tr>
+                            <tr>
+                                <td>Sammie</td>
+                                <td>46406 Powlowski Common</td>
+                                <td>Cristmouth</td>
+                                <td>51</td>
+                                <td>2014/03/29</td>
+                                <td>$345,739</td>
+                            </tr>
+                            <tr>
+                                <td>Terrance.Borer</td>
+                                <td>1568 Richmond Bypass</td>
+                                <td>Schillerfort</td>
+                                <td>46</td>
+                                <td>2014/10/27</td>
+                                <td>$634,073</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td>731 Stiedemann Crossing</td>
+                                <td>Rolfsonborough</td>
+                                <td>98</td>
+                                <td>2013/11/12</td>
+                                <td>$203,952</td>
+                            </tr>
+                            <tr>
+                                <td>Mckenna.Herman</td>
+                                <td>63204 Hegmann Keys</td>
+                                <td>New Isobelview</td>
+                                <td>2</td>
+                                <td>2013/08/12</td>
+                                <td>$702,091</td>
+                            </tr>
+                            <tr>
+                                <td>Gunnar</td>
+                                <td>92873 Barney Club</td>
+                                <td>Beierview</td>
+                                <td>82</td>
+                                <td>2014/03/29</td>
+                                <td>$569,778</td>
+                            </tr>
+                            <tr>
+                                <td>Jarvis.Simonis</td>
+                                <td>0778 Elvis Spurs</td>
+                                <td>Harrisfurt</td>
+                                <td>62</td>
+                                <td>2013/05/28</td>
+                                <td>$336,046</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END: tables/basic-tables -->
+
+<!-- START: page scripts -->
+<script>
+
+    $(function () {
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
+
+</script>
+<!-- END: page scripts -->
+<div class="cat__footer">
+    <div class="cat__footer__top">
+        <div class="row">
+            <div class="col-lg-6 mb-3">
+                <div class="mb-3">
+                    <strong>Check Out Preselected Demos</strong>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled mb-3">
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Vertical Menu (Default)</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Ecommerce Version</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Horizontal Menu + Boxed Container</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Iconbar Vertical Menu</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Inverse Color Scheme</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled mb-3">
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Super Clean Mode + Menu Shadow</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Horizontal Menu</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Compact Horizontal Menu</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Vertical Menu + Boxed</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Horizontal Menu + Boxed</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <div class="mb-3">
+                    <strong>Check Out Preselected Demos</strong>
+                </div>
+                <div class="cat__footer__description">
+                    <p>Clean UI – a modern professional admin template, based on Bootstrap 4
+                        framework. Clean UI is a powerful and super flexible tool, which suits best for any
+                        kind of web application: Web Applications; CRM; CMS; Admin Panels; Dashboards; etc.
+                        Clean UI is fully responsive, which means that it looks perfect on mobiles and
+                        tablets</p>
+
+                    <p>Clean UI is fully based on SASS pre-processor, includes 50+ commented SASS files.
+                        Each file corresponds to a single component, layout, page, plugin or extension –
+                        so you can easily find necessary piece of code and edit it for your needs.
+                        The package includes both normal and minified CSS files, compiled from SASS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cat__footer__bottom">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://themeforest.net/item/clean-ui-admin-template-modular-trendy-design-modules-market-bem-angular-2-visual-builder/19597589?s_rank=4&ref=mediatec_software" target="_blank" onclick="yaCounter43604639.reachGoal('buy_sho_foo');" target="_blank" class="btn btn-default btn-rounded">
+                    Buy Now <strike>20</strike> 25$
+                </a>
+            </div>
+            <div class="col-md-8">
+                <div class="cat__footer__company">
+                    <img class="cat__footer__company-logo" src="../../modules/dummy-assets/common/img/mediatec.png" target="_blank" title="Mediatec Software">
+                    <span>
+                        © 2016 <a href="http://mediatec.org/" target="_blank">Mediatec Software</a>
+                        <br>
+                        All rights reserved
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="javascript: void(0);" class="cat__core__scroll-top" onclick="$('body, html').animate({'scrollTop': 0}, 500);"><i class="icmn-arrow-up"></i></a>
+</div>
+</div>
+</body>
+</html>

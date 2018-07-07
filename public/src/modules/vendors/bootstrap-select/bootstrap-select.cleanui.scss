@@ -1,0 +1,63 @@
+// Import mixins from "core" module
+@import '../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  BOOTSTRAP SELECT */
+
+.bootstrap-select {
+    .btn-default {
+        color: $text !important;
+        background-color: $white;
+        border-color: $gray-border;
+        &:hover {
+            border-color: $gray-darken;
+            background: $white !important;
+        }
+        &:focus, &:active {
+            border-color: $blue !important;
+            background: $white !important;
+            color: $text !important;
+        }
+    }
+    &.show {
+        .btn-default {
+            border-color: $blue !important;
+            background: $white !important;
+            color: $text !important;
+        }
+    }
+    .dropdown-menu {
+        li {
+            a {
+                padding: rem(5) rem(15);
+                outline: none;
+                display: block;
+                &:hover {
+                    color: $blue;
+                }
+                &.opt {
+                    padding-left: rem(15) !important;
+                }
+            }
+            &.hidden {
+                display: none;
+            }
+            &.no-results {
+                margin-left: rem(8);
+                margin-right: rem(8);
+                padding: rem(8) rem(10);
+                border-radius: 5px;
+                background: $gray-lighten-more;
+                color: $text;
+            }
+        }
+    }
+    .filter-option {
+        text-overflow: ellipsis;
+    }
+    .dropdown-toggle {
+        &:focus {
+            outline: none !important;
+        }
+    }
+}

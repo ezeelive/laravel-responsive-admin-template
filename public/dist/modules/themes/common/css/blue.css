@@ -1,0 +1,83 @@
+/* THEMES: RED */
+body.cat__theme--blue .cat__menu-left__logo {
+    background: #000e66;
+}
+
+body.cat__theme--blue .cat__menu-left__lock {
+    background: #000e66;
+}
+
+body.cat__theme--blue .cat__menu-left__pin-button {
+    opacity: .7;
+}
+
+body.cat__theme--blue .cat__menu-left__pin-button:hover {
+    opacity: 1;
+}
+
+body.cat__theme--blue .cat__menu-left__pin-button div {
+    background: #fff;
+}
+
+body.cat__theme--blue .cat__menu-left__pin-button div:before, body.cat__theme--blue .cat__menu-left__pin-button div:after {
+    background: #fff;
+}
+
+body.cat__theme--blue .cat__menu-left {
+    background: #000730;
+}
+
+body.cat__theme--blue .cat__menu-left__item > a {
+    color: #fff;
+}
+
+body.cat__theme--blue .cat__menu-left__divider {
+    background: rgba(255, 255, 255, 0.17);
+}
+
+body.cat__theme--blue .cat__menu-left__icon {
+    color: #fff;
+}
+
+body.cat__theme--blue .cat__menu-left__submenu.cat__menu-left__item > a::after {
+    border-color: transparent rgba(255, 255, 255, 0.17) transparent transparent;
+}
+
+body.cat__theme--blue .cat__menu-left__item--active > a,
+body.cat__theme--blue .cat__menu-left__item:hover > a,
+body.cat__theme--blue .cat__menu-left__item:active > a,
+body.cat__theme--blue .cat__menu-left__item:focus > a {
+    background: #000e66;
+}
+
+body.cat__theme--blue .cat__menu-left__submenu--toggled.cat__menu-left__item {
+    color: #fff;
+}
+
+body.cat__theme--blue .cat__menu-left__submenu--toggled.cat__menu-left__item > a {
+    background: #000e66;
+    color: #ffffff;
+}
+
+body.cat__theme--blue .cat__menu-left__submenu--toggled.cat__menu-left__item > a .cat__menu-left__icon {
+    color: #ffffff;
+}
+
+body.cat__theme--blue .cat__menu-left__submenu > .cat__menu-left__list {
+    background: #000b51;
+}
+
+@media (min-width: 768px) {
+    body.cat__theme--blue.cat__config--vertical.cat__config--compact .cat__menu-left__item > a:before {
+        background: #000e63;
+    }
+}
+
+@media (min-width: 768px) {
+    body.cat__theme--blue.cat__config--horizontal .cat__menu-left__list--root > li.cat__menu-left__item > a {
+        border-left-color: black;
+    }
+    body.cat__theme--blue.cat__config--horizontal .cat__menu-left__list--root > li.cat__menu-left__item:hover > a {
+        background: #000942;
+    }
+}

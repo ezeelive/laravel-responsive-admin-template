@@ -1,0 +1,39 @@
+/* FOOTER */
+.cat__footer {
+    margin-bottom: -1.36rem;
+    background: #e4e9f0;
+    -webkit-border-radius: 5px 5px 0px 0px;
+            border-radius: 5px 5px 0px 0px;
+    padding: 3.57rem 1.42rem 2.14rem;
+}
+
+.cat__footer__bottom {
+    margin-top: 1.42rem;
+    padding-top: 2.14rem;
+    border-top: 1px solid #d2d9e5;
+}
+
+.cat__footer__company {
+    padding-left: 3.57rem;
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+@media (max-width: 767px) {
+    .cat__footer__company {
+        float: none;
+        margin-top: 2.14rem;
+    }
+}
+
+.cat__footer__company-logo {
+    position: absolute;
+    top: 0.35rem;
+    left: 0;
+    width: 2.14rem;
+}
+
+.cat__config--superclean .cat__footer {
+    margin-bottom: 0;
+}
