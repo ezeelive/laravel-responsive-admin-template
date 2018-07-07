@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ezeelara`
+-- Database: `ezeelaravel`
 --
 
 -- --------------------------------------------------------
@@ -74,7 +74,7 @@ CREATE TABLE `vj_users` (
 --
 
 INSERT INTO `vj_users` (`user_id`, `username`, `password`, `name`, `contact_no`, `email`, `status`, `profile_image`, `profile_summary`, `auth_key`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', '$2y$10$R3kyviTWFfgQ0MMi4pSDle3ISpo7nT78pHEaZo4HlinZ080MA6bTq', 'Admin', '9988776655', 'admin@admin.com', '1', '1528815268.jpg', 'This is a sticky behavior. It will cause the models it is attached to to remember the user''s last inputted value. In other words, the last value the user selected will be the default value the next time around the user fills out the form\r\n\r\nIt''s not perfectly reusable unless you follow the same naming standards as I do, so you may need to modify one or two lines of code (like the relation)', 'mmFGmT2ryb', 'th5n9Wo66O', '2018-05-09 00:23:43', '2018-06-12 09:30:03');
+(1, 'Admin', '$2y$10$R3kyviTWFfgQ0MMi4pSDle3ISpo7nT78pHEaZo4HlinZ080MA6bTq', 'Admin', '9822117730', 'admin@admin.com', '1', '1528815268.jpg', 'This is a sticky behavior. It will cause the models it is attached to to remember the user''s last inputted value. In other words, the last value the user selected will be the default value the next time around the user fills out the form\r\n\r\nIt''s not perfectly reusable unless you follow the same naming standards as I do, so you may need to modify one or two lines of code (like the relation)', 'mmFGmT2ryb', 'th5n9Wo66O', '2018-05-09 00:23:43', '2018-06-12 09:30:03');
 
 --
 -- Indexes for dumped tables
